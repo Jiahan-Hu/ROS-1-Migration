@@ -1,0 +1,111 @@
+<?xml version='1.0'?>
+<launch>
+    <param name="use_sim_time" value="false" />
+    <!-- <param name="fix_x" value="-1.484" />
+    <param name="fix_y" value="-8.4" />
+    <param name="fix_z" value="-1.111" />
+    <param name="fix_heading" value="70.674703" />
+    <param name="fix_pitch" value="-3.041551" />
+    <param name="fix_roll" value="-4.024228" />
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="0" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" /> -->
+
+    <!-- before -->
+    <!-- <param name="fix_x" value="-2" />
+    <param name="fix_y" value="-8.0" />
+    <param name="fix_z" value="0.6" /> 
+    <param name="fix_heading" value="-20" />
+    <param name="fix_pitch" value="3.041551" />
+    <param name="fix_roll" value="-4.024228" />
+
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="-90.674703" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" /> -->
+
+    <!-- new -->
+    <!-- <param name="fix_x" value="14.7" />
+    <param name="fix_y" value="-3.1" />
+    <param name="fix_z" value="1.2" /> 
+    <param name="fix_heading" value="-22" />
+    <param name="fix_pitch" value="-8.041551" />
+    <param name="fix_roll" value="-4.024228" />
+
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="0" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" /> -->
+
+    <!-- Friday 128-->
+<!--     <param name="fix_x" value="3.8" />
+    <param name="fix_y" value="-3.1" />
+    <param name="fix_z" value="0.84" /> 
+    <param name="fix_heading" value="76.432533" />
+    <param name="fix_pitch" value="5.007970" />
+    <param name="fix_roll" value="-2.477880" /> -->
+    
+    <!-- Dec16_selected -->
+    <param name="fix_x" value="3.8" />
+    <param name="fix_y" value="-3.4" />
+    <param name="fix_z" value="0.931" /> 
+    <param name="fix_heading" value="73.432533" />
+    <param name="fix_pitch" value="4.007970" />
+    <param name="fix_roll" value="-4.477880" />
+
+    <!-- Jan24_test1 -->
+    <!-- <param name="fix_x" value="8.0" />
+    <param name="fix_y" value="-2.0" />
+    <param name="fix_z" value="0.935" />  -->
+    <!-- <param name="fix_heading" value="91.149210" /> -->
+    <!-- from test Feb3-->
+    <!-- <param name="fix_heading" value="95" />
+    <param name="fix_pitch" value="-1.549054" />
+    <param name="fix_roll" value="-3.0" /> -->
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="0" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" />
+    
+    <!-- <param name="lidar1_topic" value="/rslidar_points" />
+    <param name="lidar2_topic" value="/velodyne_points2" />
+    <param name="transformed_lidar1_topic" value="/transformed_rslidar_points" />
+    <param name="transformed_lidar2_topic" value="/transformed_velodyne_points2" /> -->
+
+    <param name="lidar1_topic" value="/syn_pc_new" />
+    <param name="lidar2_topic" value="/syn_pc_rs" />
+    <param name="transformed_lidar1_topic" value="/transformed_new" />
+    <param name="transformed_lidar2_topic" value="/transformed_rs" />
+
+    <!-- <param name="lidar1_topic" value="/ouster/points" />
+    <param name="lidar2_topic" value="/rslidar_points" />
+    <param name="transformed_lidar1_topic" value="/transformed_os1" />
+    <param name="transformed_lidar2_topic" value="/transformed_new1" /> -->
+
+<!--     <param name="lidar1_topic" value="/new/rslidar_points" />
+    <param name="lidar2_topic" value="/rslidar_points" />
+    <param name="transformed_lidar1_topic" value="/transformed_new" />
+    <param name="transformed_lidar2_topic" value="/transformed_rs" /> -->
+
+    <!-- <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher" args="0 0 0 0 0 0 /map /fix_lidar 10" /> -->
+    <node pkg="ros_transform_utils" type="pcl_tf_pub" name="pcl_tf_pub" output="screen" />
+
+    <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_sync" args="-d $(find ros_transform_utils)/rviz/rviz_show_2transformed_lidar.rviz" />
+    </group>
+
+</launch>

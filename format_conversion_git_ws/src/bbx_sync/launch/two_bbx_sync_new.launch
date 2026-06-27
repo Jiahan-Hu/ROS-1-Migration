@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<launch>
+    
+    <arg name="input_topic1" default="/tracking/transformed_objects_header_bbx_score_label" />
+    <arg name="input_topic2" default="/tracking2/transformed_objects_header_bbx_score_label" />
+    <arg name="output_topic1" default="/tracking/transformed_objects_bbx_score_label_sync" />
+    <arg name="output_topic2" default="/tracking2/transformed_objects_bbx_score_label_sync" />
+
+    <node pkg="two_bbx_sync" type="two_bbx_sync_new" name="two_bbx_sync_new_node" output="screen" >
+        <param name="input_topic1" value="$(arg input_topic1)" />
+        <param name="input_topic2" value="$(arg input_topic2)" />
+        <param name="output_topic1" value="$(arg output_topic1)" />
+        <param name="output_topic2" value="$(arg output_topic2)" />
+    </node>
+
+
+    <!-- <arg name="rviz" default="false" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_sync" args="-d $(find mapping_ucla)/rviz_cfg/mapping_ucla.rviz" />
+    </group> -->
+
+    <!-- <node pkg="rosbag" type="play" name="player1"  args="/media/zhaoliang/WD_BLACK/my_data/rosbag/rosbag_gps/Dec-16/selected_data/lidar_new/2022-12-16-14-04-54_1_lidar.bag"/>
+    <node pkg="rosbag" type="play" name="player2"  args="/media/zhaoliang/WD_BLACK/my_data/rosbag/rosbag_gps/Dec-16/selected_data/lidar_rs/2022-12-16-14-05-46_1_lidar.bag"/>
+ -->
+
+</launch>

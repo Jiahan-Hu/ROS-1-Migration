@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="ros_transform_utils" type="tf2pose" name="tf2pose" output="screen">
+    <param name="parent_frame" value="map"/>
+    <param name="child_frame" value="os_sensor_se"/>
+    <param name="output_topic" value="/fusion_pose"/>
+  </node>
+</launch>

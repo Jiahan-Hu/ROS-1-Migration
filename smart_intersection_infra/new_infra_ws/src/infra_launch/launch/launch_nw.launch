@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- rviz -->
+    <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_" args="-d $(find infra_launch)/rviz/rviz_se.rviz" />
+    </group>
+
+    <!-- camera node -->
+    <!-- <include file="$(find axis_camera)/launch/smart_intersection_nw.launch">
+    </include> -->
+
+    <!-- ouster lidar node -->
+    <include file="$(find ouster_ros)/launch/sensor.launch">
+        <arg name="ouster_ns" default="ouster_nw" />
+        <arg name="sensor_hostname" default="192.168.1.3" />
+        <arg name="timestamp_mode" default="TIME_FROM_ROS_TIME" />
+        <!-- <arg name="timestamp_mode" default="TIME_FROM_SYNC_PULSE_IN" /> -->
+    </include>
+
+    <!-- gps node -->
+    <!-- <include file="$(find nmea_gps_driver)/launch/launch_pyserial_get_gps.launch">
+        <arg name="port" default="/dev/ttyUSB0" />
+        <arg name="baud" default="9600" />
+        <arg name="ori_gps_topic" default="/gps_nw/gps_time_ori" />
+        <arg name="gps_publish_topic" default="/gps_nw/gps_time_300hz" />
+        <arg name="gps_time_hz" default="300" /> 
+    </include> -->
+</launch>

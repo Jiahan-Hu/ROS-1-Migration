@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<launch>
+    <node name="header_bbx_tf_pub_node" pkg="ros_transform_utils" type="header_bbx_tf_pub">
+        <!-- <param name="fusion_bbx_topic" type="string" value="/tracking/objects_header_box_score" /> -->
+        <param name="fusion_bbx_topic" type="string" value="/tracking/objects_header_bbx_score_label" />
+        <!-- <param name="transformed_bbx_topic" type="string" value="/tracking/transformed_objects_header_box_score" /> -->
+         <param name="transformed_bbx_topic" type="string" value="/tracking/transformed_objects_header_bbx_score_label" />
+    </node>
+</launch>

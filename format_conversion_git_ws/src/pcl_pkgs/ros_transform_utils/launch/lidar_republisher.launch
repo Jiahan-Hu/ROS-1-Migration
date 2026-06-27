@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="lidar_republisher_node" pkg="lidar_transformer" type="lidar_republisher.py" output="screen">
+    <param name="lidar_topic" value="/hardware_interface/velodyne_1/velodyne_points" />
+    <param name="republish_topic" value="/hardware_interface/velodyne_1_front/velodyne_points" />
+    <param name="new_frame_id" value="velodyne_1_front" />
+  </node>
+</launch>

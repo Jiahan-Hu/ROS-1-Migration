@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch swarm_ros_bridge agent1_test.launch --screen'
+Name=Swarm ROS
+Comment=Swarm ROS
+Icon=/home/dev/Documents/icons/connection.svg

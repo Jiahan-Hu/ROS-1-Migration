@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch data_project new_detection_tracking_1_se.launch --screen'
+Name=Detection Tracking
+Comment=Detection Tracking
+Icon=/home/mobility/ros_ws/Fast_ros_launch/icons/launch_track.svg

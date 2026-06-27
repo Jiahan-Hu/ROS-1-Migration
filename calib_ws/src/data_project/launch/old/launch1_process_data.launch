@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim1">
+    <!-- !!!!!!the parameters for the transformation need to change !!!!! -->
+    <arg name="yaw_misalignment" default="-0.85" />
+    <arg name="lever_x" default="1.65" />
+    <arg name="lever_y" default="0" />
+    
+    <arg name="box_color1" default="51.0" />
+    <arg name="box_color2" default="128.0" />
+    <arg name="box_color3" default="204.0" />
+    <arg name="box_colora" default="0.8" />
+
+<!-- specific parameters definition ends-->
+
+<!-- general parameters definition starts-->
+
+    <!-- obj detection model -->
+    <arg name="obj_detect_path1" default="/home/jiaqi/autoware.ai/cnnseg/velodyne64/deploy.prototxt" />
+    <arg name="obj_detect_path2" default="/home/jiaqi/autoware.ai/cnnseg/velodyne64/deploy.caffemodel" />
+<!--     <arg name="obj_detect_path1" default="/home/jiaqi/autoware.ai/cnnseg/velodyne128/deploy.prototxt" />
+    <arg name="obj_detect_path2" default="/home/jiaqi/autoware.ai/cnnseg/velodyne128/deploy.caffemodel" /> -->
+<!-- general parameters definition ends-->
+
+    <!-- object detection -->
+    <include file="$(find multi_modalities_sensor_fusion)/launch/launch1_muti_modalities_sensor_fusion.launch">        
+          <arg name="network_definition_file" value="$(arg obj_detect_path1)" />
+          <arg name="pretrained_model_file"  value="$(arg obj_detect_path2)"/>
+<!--                <arg name="points_src" default="/syn_pc_rs" /> -->
+<!--                <arg name="points_src" default="/syn_pc_new" /> -->
+<!--           <arg name="points_src" default="/syn_pc_rs" /> -->
+            <arg name="points_src" default="/veh_1/rslidar_points" />
+
+          <arg name="pub_detector_point_cluster" default="/detection/lidar_detector/points_cluster" />
+          <arg name="pub_detector_objects" default="/detection/lidar_detector/objects" />
+          <arg name="pub_points_cluster" default="/points_cluster" />
+          <arg name="pub_cluster_centroids" default="/cluster_centroids" />
+          <arg name="pub_cloud_clusters" default="/detection/lidar_detector/cloud_clusters" />
+          <arg name="pc_adjustable_z" default="0.0" />
+
+    </include>
+
+    <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="cluster_detect_visualization_02"
+              output="screen" ns="/detection/lidar_detector">
+        <param name="box_color1"  value="$(arg box_color1)"/>
+        <param name="box_color2"  value="$(arg box_color2)"/>
+        <param name="box_color3"  value="$(arg box_color3)"/>
+        <param name="box_colora"  value="$(arg box_colora)"/>
+    </node>
+
+    <!-- rviz -->
+
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_rs" args="-d $(find data_project)/rviz/show_rs.rviz" />
+</group>
+
+</launch>

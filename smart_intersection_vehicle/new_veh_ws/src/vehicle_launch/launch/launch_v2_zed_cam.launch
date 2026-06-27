@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- rviz -->
+    <arg name="rviz" default="false" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_" args="-d $(find vehicle_launch)/rviz/rviz.rviz" />
+    </group>
+
+    <!-- zed cam 1-->
+    <include file="$(find zed_wrapper)/launch/zed2i.launch">
+        <arg name="node_name" default="zed_node1" />
+        <arg name="camera_name" default="zed2i_v2" />
+        <arg name="camera_id" default="0" />
+        <arg name="input_gps_time" default="/veh_2/gps_can_time_hz10" />
+    </include>
+
+    <!-- zed cam 2-->
+    <include file="$(find zed_wrapper)/launch/zed2i.launch">
+        <arg name="node_name" default="zed_node2" />
+        <arg name="camera_name" default="zed2i_v2" />
+        <arg name="camera_id" default="1" />
+        <arg name="input_gps_time" default="/veh_2/gps_can_time_hz10" />
+    </include>
+
+    <!-- zed cam 3-->
+    <!-- <include file="$(find zed_wrapper)/launch/zed2i.launch">
+        <arg name="node_name" default="zed_node3" />
+        <arg name="camera_name" default="zed2i_v2" />
+        <arg name="camera_id" default="2" />
+        <arg name="input_gps_time" default="/veh_2/gps_can_time_hz10" />
+    </include> -->
+
+    <!-- zed cam 4-->
+    <!-- <include file="$(find zed_wrapper)/launch/zed2i.launch">
+        <arg name="node_name" default="zed_node4" />
+        <arg name="camera_name" default="zed2i_v2" />
+        <arg name="camera_id" default="3" />
+        <arg name="input_gps_time" default="/veh_2/gps_can_time_hz10" />
+    </include>
+     -->
+</launch>

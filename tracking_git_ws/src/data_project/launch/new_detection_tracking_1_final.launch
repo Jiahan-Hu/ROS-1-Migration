@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim1">
+<!-- specific parameters definition ends-->
+
+<!-- general parameters definition starts-->
+
+    <!-- velodyne16 and velodyne64 work but 128 won't work  -->
+    <arg name="obj_detect_path1" default="/home/zhaoliang/zzl/zhz03_github/Cooperfuse_framework/on_car_tracking/src/multi_modalities_sensor_fusion/models/velodyne64/deploy.prototxt" />
+    <arg name="obj_detect_path2" default="/home/zhaoliang/zzl/zhz03_github/Cooperfuse_framework/on_car_tracking/src/multi_modalities_sensor_fusion/models/velodyne64/deploy.caffemodel" />
+    <!-- <arg name="obj_detect_path1" default="/home/jiaqi/ros_ws/CooperFuse_Framework/tracking/src/multi_modalities_sensor_fusion/models/velodyne16/deploy.prototxt" />
+    <arg name="obj_detect_path2" default="/home/jiaqi/ros_ws/CooperFuse_Framework/tracking/src/multi_modalities_sensor_fusion/models/velodyne16/deploy.caffemodel" /> -->
+
+    <arg name="detection_object_topic" default="/detection/lidar_detector/objects"/>
+    <arg name="segment_cloud_topic" default="/segment/clouds_segmented"/>
+
+    <!-- object detection -->
+    <include file="$(find multi_modalities_sensor_fusion)/launch/launch1_muti_modalities_sensor_fusion.launch">        
+          <arg name="network_definition_file" value="$(arg obj_detect_path1)" />
+          <arg name="pretrained_model_file"  value="$(arg obj_detect_path2)"/>
+          <!-- this is where you need to change according to different point cloud topics    -->
+          <!-- <arg name="points_src" default="/veh_1/rslidar_points" />  -->
+          <!-- <arg name="points_src" default="/sync/veh_1/tchanged_rslidar_points" /> -->
+          <arg name="points_src" default="/veh2/rslidar_points" /> 
+
+
+          <arg name="pub_detector_point_cluster" default="/detection/lidar_detector/points_cluster" />
+          <arg name="pub_detector_objects" default="/detection/lidar_detector/objects" />
+          <arg name="pub_points_cluster" default="/detection/lidar_detector/points_cluster" />
+          <arg name="pub_cluster_centroids" default="/detection/lidar_detector/cluster_centroids" />
+          <arg name="pub_cloud_clusters" default="/detection/lidar_detector/cloud_clusters" />
+          <arg name="pc_adjustable_z" default="0.0" />
+
+    </include>
+
+    <!-- Launch tracking_node -->
+    <node name="tracking_node_pc_new" pkg="tracking_lib_execute" type="tracking_lib_execute_tracking_node_pc" output="screen">
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/new_tracking_TRC_pc.yaml"/>
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/kitti/TrackingWorker_TRC.yaml"/>
+    </node>
+
+    <!-- tracking_lib autoware api -->
+    <!--     <node pkg="api_tracking_lib_autoware" type="api_tracking_lib_autoware" name="api_tracking_lib_autoware" output="screen" /> -->
+    <node pkg="api_tracking_lib_autoware" type="api_tracking_lib_autoware_sim" name="api_tracking_lib_autoware_01" output="screen">
+
+        <param name="detection_object_topic" value="$(arg detection_object_topic)" />
+        <param name="segment_cloud_topic" value="$(arg segment_cloud_topic)" />
+    </node>
+
+    <include file="$(find bbx_filter)/launch/bbx_filter_veh.launch">
+        <!-- Pass arguments as needed -->
+        <!-- The actual k window is k+1 -->  
+        <arg name="k_arg" value="3"/>
+        <arg name="subscribe_topic_arg" value="/tracking/transformed_objects_fusion_box_score"/>
+        <arg name="publish_topic_arg" value="/tracking/smooth/transformed_objects_fusion_box_score"/>
+    </include>
+
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_rs" args="-d $(find data_project)/rviz/show_rs.rviz" />
+</group>
+
+</launch>

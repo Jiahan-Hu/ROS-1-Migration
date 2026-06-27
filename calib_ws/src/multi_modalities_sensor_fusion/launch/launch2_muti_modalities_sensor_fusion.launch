@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!-- -->
+<launch>
+  <arg name="network_definition_file" default="/home/jiaqi/autoware.ai/cnnseg/velodyne64/deploy.prototxt" />
+  <arg name="pretrained_model_file"  default="/home/jiaqi/autoware.ai/cnnseg/velodyne64/deploy.caffemodel"/>
+  <arg name="points_src" default="/points_raw" />
+  <arg name="score_threshold" default="0.6" />
+  <arg name="use_gpu" default="true" />
+  <arg name="gpu_device_id" default="0" />
+  <arg name="object_yolo_f_topic_src_" default="/detection/image_detector2/objects_f" />
+  <arg name="object_yolo_r_topic_src_" default="/detection/image_detector2/objects_r" />
+
+  <arg name="if_use_camera_" default="false" />
+
+<!--     <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d /home/jiaqi/autoware.ai/data_project.rviz" />
+    </group>
+ -->
+
+
+<!-- param for ground removal -->
+  <arg name="no_ground_point_topic_"  default="/detection2/points_no_ground" />
+  <arg name="ground_point_topic_" default="/detecion2/points_ground" />
+  <arg name="input_point_topic_" default="/points_raw" />
+  <arg name="DistanceThreshold_" default="0.4" />
+  <arg name="average_height_" default="-2" />
+  <arg name="height_offset_" default="0.4" />
+  <arg name="points_cropped_topic_" default="/cropped_points" />
+<!-- ************************ -->
+
+<!-- param for detector  -->
+  <arg name="pub_detector_point_cluster" default="/detection/lidar_detector/points_cluster" />
+  <arg name="pub_detector_objects" default="/detection/lidar_detector/objects" />
+  <arg name="pub_points_cluster" default="/points_cluster" />
+  <arg name="pub_cluster_centroids" default="/cluster_centroids" />
+  <arg name="pub_cloud_clusters" default="/detection/lidar_detector/cloud_clusters" />
+
+<!-- adjustable z -->
+  <arg name="pc_adjustable_z" default="0.0" />
+
+<!-- param for clustering -->
+  <arg name="cluster_size_min_" default="30" />
+  <arg name="cluster_size_max_" default="100000" />
+  <arg name="pose_estimation_" default="false" /> 
+  <arg name="cluster_merge_threshold_" default="1" />
+  <arg name="output_frame_" default="velodyne" />
+  <arg name="clustering_distance_" default="0.75" />
+  
+  <!-- <arg name="clustering_distances_" default="[0.5,1.1,1.6,2.1,2.6]" /> -->
+  <!-- <arg name="clustering_ranges_" default="[15,30,45,60]" /> -->
+  <arg name="clustering_distances_" default="[0.5,1.2]" />
+  <arg name="clustering_ranges_" default="[30]" />
+  <arg name="use_multiple_thres_" default="true" />
+<!-- ************************ -->
+
+  <node pkg="multi_modalities_sensor_fusion" type="multi_modalities_sensor_fusion" name="muti_modalities_sensor_fusion_01" output="screen">
+    <param name="network_definition_file" value="$(arg network_definition_file)" />
+    <param name="pretrained_model_file" value="$(arg pretrained_model_file)" />
+    <param name="points_src" value="$(arg points_src)" />
+    <param name="score_threshold" value="$(arg score_threshold)" />
+    <param name="use_gpu" value="$(arg use_gpu)" />
+    <param name="gpu_device_id" value="$(arg gpu_device_id)" />
+    <param name="object_yolo_f_topic_src" value="$(arg object_yolo_f_topic_src_)" />
+    <param name="object_yolo_r_topic_src" value="$(arg object_yolo_r_topic_src_)" />
+
+<!--     new added -->
+    <param name="pub_detector_point_cluster" value="$(arg pub_detector_point_cluster)" />
+    <param name="pub_detector_objects" value="$(arg pub_detector_objects)" />
+    <param name="pub_points_cluster" value="$(arg pub_points_cluster)" />
+    <param name="pub_cluster_centroids" value="$(arg pub_cluster_centroids)" />
+    <param name="pub_cloud_clusters" value="$(arg pub_cloud_clusters)" />
+    <param name="pc_adjustable_z" value="$(arg pc_adjustable_z)" />
+
+    <param name="if_use_camera" value="$(arg if_use_camera_)" />
+
+    <param name="no_ground_point_topic"  value="$(arg no_ground_point_topic_)"/> 
+    <param name="ground_point_topic" value="$(arg ground_point_topic_)"/>
+    <param name="input_point_topic" value="$(arg input_point_topic_)"/>
+    <param name="DistanceThreshold" value="$(arg DistanceThreshold_)"/>
+    <param name="average_height" value="$(arg average_height_)"/>
+    <param name="height_offset" value="$(arg height_offset_)"/>
+    <param name="points_cropped_topic" value="$(arg points_cropped_topic_)"/>
+
+    <param name="cluster_size_min"  value="$(arg cluster_size_min_)"/> 
+    <param name="cluster_size_max" value="$(arg cluster_size_max_)"/>
+    <param name="pose_estimation" value="$(arg pose_estimation_)"/>
+    <param name="cluster_merge_threshold" value="$(arg cluster_merge_threshold_)"/>
+    <param name="output_frame" value="$(arg output_frame_)"/>
+    <param name="clustering_distance" value="$(arg clustering_distance_)"/>
+    <param name="clustering_distances" value="$(arg clustering_distances_)"/>
+    <param name="clustering_ranges" value="$(arg clustering_ranges_)"/>
+    <param name="use_multiple_thres" value="$(arg use_multiple_thres_)"/>
+
+  </node>
+
+<!--     <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="cluster_detect_visualization_01"
+          output="screen" ns="/detection/lidar_detector" /> -->
+
+<!--     <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="cluster_detect_visualization_01"
+          output="screen" ns="/detection/lidar_detector" /> -->
+
+</launch>

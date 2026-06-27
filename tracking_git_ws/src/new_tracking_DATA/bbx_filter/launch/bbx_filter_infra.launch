@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim2">
+  <!-- Set the parameter 'k' -->
+  <!-- The actual k window is k+1 -->
+  <param name="k" type="int" value="3"/>
+
+  <!-- Set the names of the subscribed and published topics -->
+  <param name="subscribe_topic" type="str" value="/tracking2/transformed_objects_fusion_box_score"/>
+  <param name="publish_topic" type="str" value="/tracking/smooth/transformed_objects_fusion_box_score"/>
+
+  <!-- Launch the marker_initializer node -->
+  <node name="marker_initializer_node2" pkg="bbx_filter" type="bbx_filter_node" output="screen"/>
+</group>
+</launch>
+

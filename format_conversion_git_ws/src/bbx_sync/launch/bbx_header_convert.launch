@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<launch>
+    <!-- Node to convert MarkerArray to MarkerArrayHeader -->
+    <node pkg="bbx_sync" type="bbx2headerbbx" name="marker_converter_node" output="screen">
+        <!-- Input and Output topics as ROS parameters -->
+        <param name="input_topic" value="/tracking/bbx1" />
+        <param name="output_topic" value="/tracking/header_bbx1" />
+    </node>
+</launch>
+
+

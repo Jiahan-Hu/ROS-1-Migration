@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim1">
+  <!-- Set the parameter 'k' -->
+  <!-- The actual k window is k+1 -->
+  <!-- <param name="k" type="int" value="3"/> -->
+
+  <!-- Set the names of the subscribed and published topics -->
+  <!-- <param name="subscribe_topic" type="str" value="/tracking/transformed_objects_fusion_box_score"/> -->
+  <!-- <param name="publish_topic" type="str" value="/tracking/smooth/transformed_objects_fusion_box_score"/> -->
+  
+  <!-- Set the parameter 'k' -->
+  <!-- The actual k window is k+1 -->  
+  <arg name="k_arg" default="3"/>
+  <arg name="subscribe_topic_arg" default="/tracking/transformed_objects_fusion_box_score"/>
+  <arg name="publish_topic_arg" default="/tracking/smooth/transformed_objects_fusion_box_score"/>
+
+  <!-- Launch the marker_initializer node -->
+  <!-- <node name="marker_initializer_node1" pkg="bbx_filter" type="bbx_filter_node" output="screen"/> -->
+  <node name="marker_initializer_node1" pkg="bbx_filter" type="bbx_filter_node" output="screen">
+    <!-- Pass arguments as parameters -->
+    <param name="k" type="int" value="$(arg k_arg)"/>
+    <param name="subscribe_topic" type="str" value="$(arg subscribe_topic_arg)"/>
+    <param name="publish_topic" type="str" value="$(arg publish_topic_arg)"/>
+  </node>
+</group>
+</launch>
+

@@ -1,0 +1,8 @@
+
+infra_hardware_ws/build/
+
+infra_hardware_ws/devel/
+
+infra_hardware_ws/.catkin_workspace
+
+infra_hardware_ws/src/CMakeLists.txt

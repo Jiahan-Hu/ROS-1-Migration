@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+roslaunch autoware_camera_lidar_calibrator camera_lidar_calibration.launch intrinsics_file:=/home/ne0/Desktop/calib_heat_camera1_rear_center_fisheye.yaml compressed_stream:=True camera_id:=camera1
+-->
+<launch>
+
+    <!-- <arg name="intrinsics_file" default="/home/zhaoliang/white_right_cam_2/sr_PnPRansac_lidar_camera_calibration.yaml" /> -->
+    <!-- <arg name="intrinsics_file" default="/home/zhaoliang/white_front_left_cam/fl_solvePnP_autoware_lidar_camera.yaml" /> -->
+    
+    <arg name="intrinsics_file" default="/home/zhaoliang/infra_214_ext/214_solvePnPRansac_autoware_lidar_camera_calibration.yaml" />
+    <arg name="target_frame" default="os_sensor"/>
+    <arg name="camera_frame" default="axis_camera"/>
+    <arg name="camera_id" default="/" />
+    <arg name="image_topic_src_ori" default = "/axis214_new/image_raw"/>
+    <arg name="pc_topic" default="/ouster_nw/points" />
+
+    <node pkg="calibration_publisher" type="calibration_publisher" name="calibration_publisher" ns="$(arg camera_id)" output="screen">
+        <param name="register_lidar2camera_tf" type="bool" value="true"/>
+        <param name="publish_extrinsic_mat" type="bool" value="true"/>
+        <param name="publish_camera_info" type="bool" value="true"/>
+        <param name="image_topic_src" value="$(arg image_topic_src_ori)"/>   
+        <param name="calibration_file" value="$(arg intrinsics_file)"/>
+        <param name="target_frame" type="str" value="$(arg target_frame)"/>
+        <param name="camera_frame" type="str" value="$(arg camera_frame)"/>
+    </node>
+
+    <node pkg="pcd_republisher" type="pcd_republisher" name="pcd_republisher" output="screen">
+        <param name="image_raw_topic_str" type="str" value="$(arg image_topic_src_ori)"/>
+        <param name="point_cloud_topic_name_str" type="str" value="$(arg pc_topic)"/>
+        <param name="point_cloud_output_topic_name_str" type="str" value="/newrslidar_repub"/>
+        <param name="lidar_new_frame_id_str" type="str" value="newrslidar_repub"/>
+        <param name="point_cloud_transformed_topic_name_str" type="str" value="/new/rslidar_points_transformed"/>
+        <!-- //front 1, left 2, rear 3, right 4; -->
+        <param name="which_camera" type="int" value="1"/> 
+        <!-- 1 means that we're going to cross_check -->
+        <param name="cross_check" type="int" value="1"/>
+    </node>
+
+    <node pkg="rviz" type="rviz" name="cross_check_rviz" args="-d  $(find calibration_publisher)/rviz/cross_check.rviz">
+
+    </node>
+
+
+
+</launch>

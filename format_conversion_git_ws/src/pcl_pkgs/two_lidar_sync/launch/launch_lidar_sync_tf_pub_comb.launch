@@ -1,0 +1,165 @@
+<?xml version='1.0'?>
+<launch>
+    <param name="use_sim_time" value="false" />
+    <!-- <param name="fix_x" value="-1.484" />
+    <param name="fix_y" value="-8.4" />
+    <param name="fix_z" value="-1.111" />
+    <param name="fix_heading" value="70.674703" />
+    <param name="fix_pitch" value="-3.041551" />
+    <param name="fix_roll" value="-4.024228" />
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="0" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" /> -->
+
+    <!-- before -->
+    <!-- <param name="fix_x" value="-2" />
+    <param name="fix_y" value="-8.0" />
+    <param name="fix_z" value="0.6" /> 
+    <param name="fix_heading" value="-20" />
+    <param name="fix_pitch" value="3.041551" />
+    <param name="fix_roll" value="-4.024228" />
+
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="-90.674703" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" /> -->
+
+    <!-- new -->
+    <!-- <param name="fix_x" value="3.8" />
+    <param name="fix_y" value="-3.1" />
+    <param name="fix_z" value="0.84" /> 
+    <param name="fix_heading" value="76.432533" />
+    <param name="fix_pitch" value="5.007970" />
+    <param name="fix_roll" value="-2.477880" />
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="0" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" /> -->
+
+    <!-- Jan24_test1 -->
+    <!-- <param name="fix_x" value="-1.5" />
+    <param name="fix_y" value="-8.878" />
+    <param name="fix_z" value="0.935" /> 
+    <param name="fix_heading" value="91.149210" />
+    <param name="fix_pitch" value="1.552179" />
+    <param name="fix_roll" value="3.049054" /> -->
+    
+    <!-- parking test -->
+    <!-- <param name="fix_x" value="8.5" />
+    <param name="fix_y" value="-1.8" />
+    <param name="fix_z" value="0.935" /> 
+    <param name="fix_heading" value="97" />
+    <param name="fix_pitch" value="-1.549054" />
+    <param name="fix_roll" value="-3.0" /> -->
+
+    <!-- Mar3: two infra lidar  -->
+    <param name="fix_x" value="33.5" />
+    <param name="fix_y" value="-17.4" />
+    <param name="fix_z" value="-0.405" /> 
+    <param name="fix_heading" value="141.151601" />
+    <param name="fix_pitch" value="-2.473028" />
+    <param name="fix_roll" value="3.747044" />
+
+    <!-- Mar13: NW and zzl_lidar -->
+<!--     <param name="fix_x" value="2.8" />
+    <param name="fix_y" value="21.2" />
+    <param name="fix_z" value="-0.160" /> 
+    <param name="fix_heading" value="-93.369813" />
+    <param name="fix_pitch" value="1.527315" />
+    <param name="fix_roll" value="2.026793" /> -->    
+
+    <!-- Mar17: NW and zzl_lidar -->
+<!--     <param name="fix_x" value="2.8" />
+    <param name="fix_y" value="8.5" />
+    <param name="fix_z" value="-0.160" /> 
+    <param name="fix_heading" value="-93.369813" />
+    <param name="fix_pitch" value="1.527315" />
+    <param name="fix_roll" value="2.026793" /> -->
+
+    <!-- Mar17: zzl_lidar and xx_lidar-->
+    <!-- infra_calib -->
+    <!-- <param name="fix_x" value="0.423" />
+    <param name="fix_y" value="-0.345" />
+    <param name="fix_z" value="-5.206" /> 
+    <param name="fix_heading" value="46.175757 " />
+    <param name="fix_pitch" value="-1.719813" />
+    <param name="fix_roll" value="2.753587" /> -->
+
+    <!-- dynamic test -->
+    <!-- <param name="fix_x" value="7.9" />
+    <param name="fix_y" value="-7.8" />
+    <param name="fix_z" value="0.935" /> 
+    <param name="fix_heading" value="97" />
+    <param name="fix_pitch" value="-1.549054" />
+    <param name="fix_roll" value="-3.0" /> -->
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="0" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" />
+
+    <!-- <param name="lidar1_topic" value="/rslidar_points" />
+    <param name="lidar2_topic" value="/velodyne_points2" />
+    <param name="transformed_lidar1_topic" value="/transformed_rslidar_points" />
+    <param name="transformed_lidar2_topic" value="/transformed_velodyne_points2" /> -->
+
+    <!-- <param name="lidar1_topic" value="/syn_pc_new" />
+    <param name="lidar2_topic" value="/syn_pc_rs" />
+    <param name="transformed_lidar1_topic" value="/transformed_new" />
+    <param name="transformed_lidar2_topic" value="/transformed_rs" /> -->
+
+    <!-- <arg name="input_topic1" default="/ouster/points" />
+    <arg name="input_topic2" default="/new/rslidar_points" /> -->
+    <!-- Mar3: two infra lidar  -->
+    <arg name="input_topic1" default="/ouster_se/points" />
+    <arg name="input_topic2" default="/ouster_nw/points" /> 
+    <!-- Mar13: NW and zzl_lidar -->
+    <!-- <arg name="input_topic1" default="/veh_1/rslidar_points" /> -->
+    <!-- <arg name="input_topic2" default="/ouster_nw/points" /> -->
+    <!-- <arg name="input_topic2" default="/veh_2/rslidar_points" />  -->
+    <!--  <arg name="input_topic2" default="/new/rslidar_points" /> -->
+    <!-- calib at intersection -->
+    <!-- <arg name="input_topic1" default="/ouster_points_1" />
+    <arg name="input_topic2" default="/velodyne_1" /> -->
+    <arg name="output_topic1" default="/syn_pc_os" />
+    <arg name="output_topic2" default="/syn_pc_new" />
+
+    <arg name="transformed_lidar1_topic" default="/transformed_os" />
+    <arg name="transformed_lidar2_topic" default="/transformed_new" />
+    <arg name="comb_topic" default="/pcd_transformed_synched" />
+
+    <node pkg="two_lidar_sync" type="two_lidar_syn_tf_comb_pub" name="two_lidar_syn_tf_comb_pub" output="screen" >
+        <param name="input_topic1" value="$(arg input_topic1)" />
+        <param name="input_topic2" value="$(arg input_topic2)" />
+        <param name="transformed_lidar1_topic" value="$(arg transformed_lidar1_topic)" />
+        <param name="transformed_lidar2_topic" value="$(arg transformed_lidar2_topic)" />
+        <param name="output_topic1" value="$(arg output_topic1)" />
+        <param name="output_topic2" value="$(arg output_topic2)" />
+        <param name="comb_topic" value="$(arg comb_topic)" />
+    </node>
+
+    <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_sync" args="-d $(find ros_transform_utils)/rviz/rviz_show_comb_transformed_lidar.rviz" />
+    </group>
+
+    <!-- <node pkg="rosbag" type="play" name="player1"  args="/media/zhaoliang/WD_BLACK/my_data/rosbag/rosbag_gps/Dec-16/selected_data/lidar_new/2022-12-16-14-04-54_1_lidar.bag"/>
+    <node pkg="rosbag" type="play" name="player2"  args="/media/zhaoliang/WD_BLACK/my_data/rosbag/rosbag_gps/Dec-16/selected_data/lidar_rs/2022-12-16-14-05-46_1_lidar.bag"/> -->
+
+    <!-- <node pkg="rosbag" type="play" name="player1"  args="/home/zhaoliang/zzl/data_record/lidar_new/2022-12-16-14-04-54_1_lidar.bag"/>
+    <node pkg="rosbag" type="play" name="player2"  args="/home/zhaoliang/zzl/data_record/lidar_rs/2022-12-16-14-05-46_1_lidar.bag"/> -->
+
+
+</launch>

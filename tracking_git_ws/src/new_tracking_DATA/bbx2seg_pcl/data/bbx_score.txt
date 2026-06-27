@@ -1,0 +1,7056 @@
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects"
+    id: 0
+    type: 0
+    action: 3
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    scale: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 0.0
+      a: 0.0
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: ''
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 0
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.538336634636
+        y: -0.207639724016
+        z: -1.03363645077
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.997812223711
+        w: 0.0661117706041
+    scale: 
+      x: 4.43777656555
+      y: 2.66336560249
+      z: 1.76824426651
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.976410"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 1
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -4.71267414093
+        y: 0.617359757423
+        z: -1.41941380501
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.922192583231
+        w: 0.386730965186
+    scale: 
+      x: 3.51328587532
+      y: 3.05291318893
+      z: 1.46834993362
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992104"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 2
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -10.5248737335
+        y: 1.9658267498
+        z: -0.861560106277
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.965445717791
+        w: 0.260604232503
+    scale: 
+      x: 3.29885983467
+      y: 2.44173789024
+      z: 0.765597820282
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.952649"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 3
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -21.7223033905
+        y: 5.32086372375
+        z: -1.04451096058
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.985822260152
+        w: 0.16779294201
+    scale: 
+      x: 2.55339336395
+      y: 1.53231620789
+      z: 2.08902192116
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.975072"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 4
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 45.4856376648
+        y: 12.045832634
+        z: -1.60118174553
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.109804497492
+        w: 0.993953204296
+    scale: 
+      x: 5.9347577095
+      y: 2.72738480568
+      z: 1.15668046474
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.935124"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 5
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.818060398102
+        y: 2.69947171211
+        z: -1.38450586796
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.130872353568
+        w: 0.991399226887
+    scale: 
+      x: 0.762459814548
+      y: 0.52815258503
+      z: 1.52997374535
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.867770"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 6
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -1.75173091888
+        y: 6.33977222443
+        z: -1.3346016407
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.168329240729
+        w: 0.985730828733
+    scale: 
+      x: 4.31086349487
+      y: 2.18431472778
+      z: 1.72964155674
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.985807"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 7
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -9.60982322693
+        y: 8.05592060089
+        z: -1.37445354462
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.99580219318
+        w: 0.0915313719856
+    scale: 
+      x: 4.13553476334
+      y: 1.76429212093
+      z: 1.59154176712
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.996615"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 8
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 33.3919563293
+        y: 11.6563444138
+        z: -1.66252756119
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.148133546914
+        w: 0.98896736664
+    scale: 
+      x: 4.14421844482
+      y: 1.51128125191
+      z: 1.68973875046
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.979754"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 9
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 20.9206218719
+        y: 4.09226703644
+        z: -1.65209901333
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.974965594598
+        w: 0.222355772018
+    scale: 
+      x: 3.81699109077
+      y: 1.66752684116
+      z: 1.32044291496
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.996637"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 10
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 17.3043289185
+        y: 34.3337554932
+        z: -2.26379609108
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.477856018083
+        w: 0.878438174251
+    scale: 
+      x: 2.92260336876
+      y: 1.64383924007
+      z: 0.992375969887
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.753509"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 11
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 11.2553911209
+        y: 13.4203710556
+        z: -1.41014814377
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.942844009522
+        w: 0.333234412552
+    scale: 
+      x: 5.3845744133
+      y: 2.30195045471
+      z: 1.9989824295
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.993865"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 12
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 8.20283031464
+        y: -10.2021465302
+        z: -1.06065475941
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0850763528268
+        w: 0.996374434733
+    scale: 
+      x: 0.82188886404
+      y: 0.476809233427
+      z: 1.52397990227
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.687848"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 13
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 6.36155796051
+        y: -6.03744029999
+        z: -1.20557260513
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.98097827935
+        w: 0.194117529977
+    scale: 
+      x: 0.353182315826
+      y: 0.34565243125
+      z: 1.61293804646
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.680795"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 14
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.78535509109
+        y: -7.99650478363
+        z: -0.977866649628
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.68804409324
+        w: 0.725668881624
+    scale: 
+      x: 0.488186269999
+      y: 0.388386964798
+      z: 1.50091791153
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.938314"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 15
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -0.479843378067
+        y: 9.92042922974
+        z: -1.47126841545
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.998558927928
+        w: 0.0536662599267
+    scale: 
+      x: 4.21980905533
+      y: 2.04998803139
+      z: 1.63074159622
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.995474"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 16
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -17.124370575
+        y: 9.42572116852
+        z: -1.31014108658
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992400429913
+        w: 0.12305034217
+    scale: 
+      x: 4.10711669922
+      y: 2.09432244301
+      z: 1.70763361454
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.993995"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 17
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -26.6576461792
+        y: 11.7013988495
+        z: -1.35446763039
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.127412273299
+        w: 0.991849843783
+    scale: 
+      x: 3.81490135193
+      y: 1.7755664587
+      z: 1.3790730238
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.990834"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 199900627
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 18
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -36.985408783
+        y: 13.0563459396
+        z: -0.951466441154
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0792216957702
+        w: 0.996857022305
+    scale: 
+      x: 6.35462474823
+      y: 1.93300867081
+      z: 1.90293288231
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.990674"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects"
+    id: 0
+    type: 0
+    action: 3
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    scale: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 0.0
+      a: 0.0
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: ''
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 0
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.542759478092
+        y: -0.264044046402
+        z: -1.03167510033
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.997854193164
+        w: 0.0654752562838
+    scale: 
+      x: 4.44868612289
+      y: 2.77697515488
+      z: 1.75709068775
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.974419"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 1
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -4.7158074379
+        y: 0.60747563839
+        z: -1.41762948036
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.397562647958
+        w: 0.917575032871
+    scale: 
+      x: 3.49171662331
+      y: 3.09011363983
+      z: 1.46420383453
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992407"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 2
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -10.5209369659
+        y: 1.96426451206
+        z: -0.862024903297
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.964968472895
+        w: 0.262365863479
+    scale: 
+      x: 3.27615904808
+      y: 2.45190501213
+      z: 0.766061782837
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.944418"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 3
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -21.710105896
+        y: 5.32436132431
+        z: -1.0449668169
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.985163451961
+        w: 0.171618684647
+    scale: 
+      x: 2.51303315163
+      y: 1.54660022259
+      z: 2.0899336338
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.972980"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 4
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 45.4766769409
+        y: 12.172290802
+        z: -1.60048389435
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.996126266716
+        w: 0.0879344116821
+    scale: 
+      x: 5.91136312485
+      y: 2.72999358177
+      z: 1.1562128067
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.964673"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 5
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.812913298607
+        y: 2.70136785507
+        z: -1.38314533234
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.151362870198
+        w: 0.988478265581
+    scale: 
+      x: 0.757071733475
+      y: 0.517951309681
+      z: 1.52948486805
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.865651"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 6
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -1.75977814198
+        y: 6.35751056671
+        z: -1.33791816235
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.160673085803
+        w: 0.987007679554
+    scale: 
+      x: 4.33994531631
+      y: 2.14494013786
+      z: 1.7262609005
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992553"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 7
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -9.59105396271
+        y: 8.08581638336
+        z: -1.37336444855
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.99281378629
+        w: 0.119669485472
+    scale: 
+      x: 4.08592319489
+      y: 1.86122965813
+      z: 1.59285736084
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.997512"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 8
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 33.4079627991
+        y: 11.6655168533
+        z: -1.66428160667
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.145058363466
+        w: 0.989423100189
+    scale: 
+      x: 4.11933326721
+      y: 1.52625823021
+      z: 1.69382715225
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.980482"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 9
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 20.6399536133
+        y: 3.84989500046
+        z: -1.64196956158
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.975245080317
+        w: 0.221126735873
+    scale: 
+      x: 4.017578125
+      y: 1.84124994278
+      z: 1.33954691887
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.978603"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 10
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 11.6783418655
+        y: 13.8498153687
+        z: -1.42759168148
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.942545098858
+        w: 0.334078937706
+    scale: 
+      x: 5.30083227158
+      y: 2.31422615051
+      z: 2.00729298592
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.984434"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 11
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.76501226425
+        y: -7.99463510513
+        z: -0.97583770752
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.710886688829
+        w: 0.703306558796
+    scale: 
+      x: 0.510365605354
+      y: 0.326882183552
+      z: 1.49720811844
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.943924"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 12
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.0842157900333
+        y: 9.96061992645
+        z: -1.47968053818
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.999250506748
+        w: 0.0387094919148
+    scale: 
+      x: 4.25418043137
+      y: 1.95356917381
+      z: 1.64963769913
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.997169"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 13
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -17.0939216614
+        y: 9.42502975464
+        z: -1.31118035316
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992288743524
+        w: 0.123947769142
+    scale: 
+      x: 4.15153837204
+      y: 2.10250329971
+      z: 1.70959615707
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992901"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 14
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -26.6646251678
+        y: 11.7029657364
+        z: -1.35515928268
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.126600665752
+        w: 0.991953764765
+    scale: 
+      x: 3.79854059219
+      y: 1.7694542408
+      z: 1.36594951153
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.975961"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 299896717
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 15
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -36.9633865356
+        y: 13.0749969482
+        z: -0.948787927628
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0822085357821
+        w: 0.996615149717
+    scale: 
+      x: 6.25675725937
+      y: 1.93779754639
+      z: 1.89757585526
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.989599"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects"
+    id: 0
+    type: 0
+    action: 3
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    scale: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 0.0
+      a: 0.0
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: ''
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 0
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.544924139977
+        y: -0.263448238373
+        z: -1.02715194225
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.997891242771
+        w: 0.0649081474155
+    scale: 
+      x: 4.42873191833
+      y: 2.78266716003
+      z: 1.74804449081
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.971333"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 1
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -4.71684741974
+        y: 0.618180990219
+        z: -1.41949248314
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.392116359103
+        w: 0.919915627068
+    scale: 
+      x: 3.51153683662
+      y: 3.0689060688
+      z: 1.46562099457
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.994730"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 2
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -10.5301113129
+        y: 1.97618055344
+        z: -0.860978901386
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.964335795877
+        w: 0.264681833132
+    scale: 
+      x: 3.32667684555
+      y: 2.46077227592
+      z: 0.765367150307
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.955682"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 3
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -21.7273044586
+        y: 5.32188653946
+        z: -1.04485285282
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.986160719211
+        w: 0.165792146631
+    scale: 
+      x: 2.57790470123
+      y: 1.53488457203
+      z: 2.08970570564
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.979210"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 4
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 45.4708709717
+        y: 12.1758594513
+        z: -1.60077476501
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.996115103104
+        w: 0.0880607822357
+    scale: 
+      x: 5.94324159622
+      y: 2.72593331337
+      z: 1.15656268597
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.958259"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 5
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.862892091274
+        y: 2.68318128586
+        z: -1.38502955437
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.138619290309
+        w: 0.990345743846
+    scale: 
+      x: 0.859880447388
+      y: 0.513013780117
+      z: 1.53213727474
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.874537"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 6
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -1.79681241512
+        y: 6.23420715332
+        z: -1.33391094208
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.167841073406
+        w: 0.985814066687
+    scale: 
+      x: 4.33298969269
+      y: 1.9477802515
+      z: 1.73102271557
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.988846"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 7
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -9.58760929108
+        y: 8.07847499847
+        z: -1.37556672096
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.993209924734
+        w: 0.116335916249
+    scale: 
+      x: 4.09873104095
+      y: 1.82708609104
+      z: 1.59190499783
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.999061"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 8
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 33.4017028809
+        y: 11.6718473434
+        z: -1.6627779007
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.146882887908
+        w: 0.989153889564
+    scale: 
+      x: 4.0897192955
+      y: 1.55754685402
+      z: 1.69441735744
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.975231"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 9
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 19.5150928497
+        y: 3.18531298637
+        z: -1.6116168499
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.940501447197
+        w: 0.339789681745
+    scale: 
+      x: 4.20884799957
+      y: 1.69829118252
+      z: 1.393902421
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.990224"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 10
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 12.6620426178
+        y: 14.8655653
+        z: -1.66825819016
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.937476173163
+        w: 0.348049457335
+    scale: 
+      x: 4.39748334885
+      y: 2.29676580429
+      z: 1.67721498013
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.979389"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 11
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.82311964035
+        y: -8.02752494812
+        z: -0.977148652077
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.853819478955
+        w: 0.520569205157
+    scale: 
+      x: 0.545680820942
+      y: 0.449409902096
+      z: 1.49890160561
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.915459"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 12
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 1.58449602127
+        y: 10.122797966
+        z: -1.48183870316
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.000239286885357
+        w: 0.999999971371
+    scale: 
+      x: 4.60638666153
+      y: 1.83418881893
+      z: 1.64532136917
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.993087"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 13
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -17.1247787476
+        y: 9.41807079315
+        z: -1.30627393723
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.123358977848
+        w: 0.99236211263
+    scale: 
+      x: 4.1038684845
+      y: 2.07367229462
+      z: 1.699203372
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.993973"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 14
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -26.6505222321
+        y: 11.7061786652
+        z: -1.35890674591
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.12597777175
+        w: 0.992033064482
+    scale: 
+      x: 3.7917368412
+      y: 1.78223931789
+      z: 1.37019491196
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.980950"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 15
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -36.5918159485
+        y: 12.9698553085
+        z: -0.948205590248
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0780846181712
+        w: 0.996946734989
+    scale: 
+      x: 5.7173833847
+      y: 1.91656208038
+      z: 1.8964111805
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.982443"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 16
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 2.85468912125
+        y: -4.66128540039
+        z: -1.08964025974
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.974963519854
+        w: 0.222364868974
+    scale: 
+      x: 0.561754465103
+      y: 0.341209620237
+      z: 1.67804288864
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.786586"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 599894762
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 17
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 18.0836544037
+        y: 35.1200065613
+        z: -2.32325673103
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.736620010226
+        w: 0.676306853828
+    scale: 
+      x: 4.54968261719
+      y: 1.8912807703
+      z: 1.13691818714
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.878614"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects"
+    id: 0
+    type: 0
+    action: 3
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    scale: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 0.0
+      a: 0.0
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: ''
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 0
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.546695888042
+        y: -0.267717838287
+        z: -1.03338599205
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.997840959103
+        w: 0.0656766346288
+    scale: 
+      x: 4.434674263
+      y: 2.78674888611
+      z: 1.74160754681
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.974307"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 1
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -4.70922374725
+        y: 0.616473853588
+        z: -1.41812801361
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.921222113919
+        w: 0.38903703786
+    scale: 
+      x: 3.51037216187
+      y: 3.07650995255
+      z: 1.46577823162
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992080"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 2
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -10.5261116028
+        y: 1.96752750874
+        z: -0.861792564392
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.965282968556
+        w: 0.261206413812
+    scale: 
+      x: 3.29497671127
+      y: 2.44253587723
+      z: 0.765829861164
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.962464"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 3
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -21.7495136261
+        y: 5.31703853607
+        z: -1.04519462585
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.986445996558
+        w: 0.164086245233
+    scale: 
+      x: 2.5968132019
+      y: 1.53747415543
+      z: 2.09038925171
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.973795"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 4
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 45.4727897644
+        y: 12.1679229736
+        z: -1.60092067719
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0901258833099
+        w: 0.995930381682
+    scale: 
+      x: 5.90167570114
+      y: 2.7408080101
+      z: 1.15720272064
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.943079"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 5
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.819109976292
+        y: 2.67966580391
+        z: -1.38397574425
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.00181105365755
+        w: 0.999998360041
+    scale: 
+      x: 0.697712481022
+      y: 0.531026482582
+      z: 1.52891337872
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.902111"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 6
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -1.81238603592
+        y: 6.19468688965
+        z: -1.33736395836
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.988608490268
+        w: 0.150509976315
+    scale: 
+      x: 4.33022642136
+      y: 1.91277885437
+      z: 1.72411680222
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.987076"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 7
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -9.60803985596
+        y: 8.05609226227
+        z: -1.37303221226
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.995894209464
+        w: 0.0905247124014
+    scale: 
+      x: 4.14661407471
+      y: 1.76612699032
+      z: 1.59265875816
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.994891"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 8
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 33.3929252625
+        y: 11.6800441742
+        z: -1.66330099106
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.148117105236
+        w: 0.988969829235
+    scale: 
+      x: 4.08546972275
+      y: 1.56005501747
+      z: 1.69302618504
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.982389"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 9
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 18.7523078918
+        y: 2.47680401802
+        z: -1.59589481354
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.947446037646
+        w: 0.319915622857
+    scale: 
+      x: 4.16008472443
+      y: 1.85486459732
+      z: 1.42534637451
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.994420"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 10
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 13.2871189117
+        y: 15.5182933807
+        z: -1.74424958229
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.38975544299
+        w: 0.920918397394
+    scale: 
+      x: 3.87609934807
+      y: 2.27451753616
+      z: 1.71227312088
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.958322"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 11
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.84592103958
+        y: -8.00341320038
+        z: -0.990510106087
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.740214882671
+        w: 0.672370379681
+    scale: 
+      x: 0.545635819435
+      y: 0.46796143055
+      z: 1.52655291557
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.884940"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 12
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 2.63744831085
+        y: 10.2535171509
+        z: -1.48245275021
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0271675137227
+        w: 0.99963089498
+    scale: 
+      x: 4.5762090683
+      y: 1.83977067471
+      z: 1.62065196037
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.998783"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 13
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -17.1263751984
+        y: 9.40471458435
+        z: -1.29925894737
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.123463537099
+        w: 0.99234910944
+    scale: 
+      x: 4.10688066483
+      y: 2.0499227047
+      z: 1.68610155582
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.997841"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 14
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -26.6492042542
+        y: 11.701590538
+        z: -1.34892642498
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992126576402
+        w: 0.125239196726
+    scale: 
+      x: 3.78930306435
+      y: 1.76959729195
+      z: 1.37599825859
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.983624"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 15
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -36.5242271423
+        y: 12.9487705231
+        z: -0.948147416115
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0778087289197
+        w: 0.996968305265
+    scale: 
+      x: 5.74687767029
+      y: 1.90838420391
+      z: 1.89629483223
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.989475"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 16
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 2.91087436676
+        y: -4.47413921356
+        z: -1.08812737465
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.833428628815
+        w: 0.552627108158
+    scale: 
+      x: 0.855053305626
+      y: 0.489940851927
+      z: 1.67944264412
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.629512"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 17
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 18.0037574768
+        y: 33.85887146
+        z: -2.24597764015
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.741699818229
+        w: 0.670731973025
+    scale: 
+      x: 4.27099180222
+      y: 1.9745401144
+      z: 0.988648533821
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.803046"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 18
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.27048397064
+        y: -5.99017429352
+        z: -0.885143816471
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.793023834569
+        w: 0.609190608763
+    scale: 
+      x: 0.502576708794
+      y: 0.217503085732
+      z: 1.034735322
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.907767"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 799894810
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 19
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 35.9922599792
+        y: 7.03448534012
+        z: -1.30910086632
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.116913156681
+        w: 0.993142141788
+    scale: 
+      x: 3.13958382607
+      y: 1.62118518353
+      z: 0.903272271156
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.941375"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects"
+    id: 0
+    type: 0
+    action: 3
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    scale: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 0.0
+      a: 0.0
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: ''
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 0
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.542312324047
+        y: -0.213463902473
+        z: -1.02926027775
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.997782892669
+        w: 0.0665529796207
+    scale: 
+      x: 4.44616270065
+      y: 2.66914463043
+      z: 1.75588917732
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.978027"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 1
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -4.71457004547
+        y: 0.615213215351
+        z: -1.41827237606
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.402195349637
+        w: 0.915553876476
+    scale: 
+      x: 3.48385620117
+      y: 3.08633208275
+      z: 1.46548962593
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.994178"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 2
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -10.5306110382
+        y: 1.97535920143
+        z: -0.860921144485
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.96556487173
+        w: 0.260162407892
+    scale: 
+      x: 3.30541419983
+      y: 2.43515944481
+      z: 0.764785826206
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.941929"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 3
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -21.7218341827
+        y: 5.32351541519
+        z: -1.04473876953
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.985536118626
+        w: 0.169465509421
+    scale: 
+      x: 2.53555655479
+      y: 1.53384101391
+      z: 2.08947753906
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.980021"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 4
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 45.4615402222
+        y: 12.1814632416
+        z: -1.6007463932
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.996134777086
+        w: 0.0878379523938
+    scale: 
+      x: 5.93273830414
+      y: 2.72986960411
+      z: 1.15731811523
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.956701"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 5
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.865917742252
+        y: 2.69310259819
+        z: -1.3847849369
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.144232268337
+        w: 0.989543860963
+    scale: 
+      x: 0.861129879951
+      y: 0.531438469887
+      z: 1.52941560745
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.875620"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 6
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -1.80622625351
+        y: 6.227247715
+        z: -1.33546483517
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.150125609866
+        w: 0.988666931409
+    scale: 
+      x: 4.33525085449
+      y: 1.97549724579
+      z: 1.7279150486
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.987458"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 7
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -9.61335372925
+        y: 8.06076812744
+        z: -1.37478590012
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.99550116973
+        w: 0.0947492536463
+    scale: 
+      x: 4.13988399506
+      y: 1.7725071907
+      z: 1.59174072742
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.995749"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 8
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 33.4006118774
+        y: 11.6758670807
+        z: -1.6617732048
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.143355656549
+        w: 0.989671236187
+    scale: 
+      x: 4.09295368195
+      y: 1.51700472832
+      z: 1.69124746323
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.978647"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 9
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 18.1926784515
+        y: 1.72994506359
+        z: -1.5653989315
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.942126762817
+        w: 0.335256860906
+    scale: 
+      x: 4.11282873154
+      y: 1.84670937061
+      z: 1.42514574528
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.995162"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 10
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 14.1450328827
+        y: 16.3889713287
+        z: -1.77767848969
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.408966980812
+        w: 0.912549181472
+    scale: 
+      x: 3.95808410645
+      y: 2.34593296051
+      z: 1.65638387203
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.980700"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 11
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.85313367844
+        y: -8.02481174469
+        z: -0.992970645428
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0331515795518
+        w: 0.999450335321
+    scale: 
+      x: 0.488204807043
+      y: 0.476240426302
+      z: 1.53112590313
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.920678"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 12
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 3.75586628914
+        y: 10.3846445084
+        z: -1.49165534973
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.083740213503
+        w: 0.996487619914
+    scale: 
+      x: 4.37148857117
+      y: 1.86828505993
+      z: 1.59554922581
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.998958"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 13
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -17.1237983704
+        y: 9.42046737671
+        z: -1.30679023266
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.99262908041
+        w: 0.121192032429
+    scale: 
+      x: 4.0975394249
+      y: 2.08510231972
+      z: 1.70278906822
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.993360"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 14
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -26.6619853973
+        y: 11.6985330582
+        z: -1.35306036472
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.991858601096
+        w: 0.127344082829
+    scale: 
+      x: 3.81683015823
+      y: 1.75540411472
+      z: 1.37498164177
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.980201"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 15
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -36.6402435303
+        y: 12.972448349
+        z: -0.948205590248
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0789758821299
+        w: 0.996876526979
+    scale: 
+      x: 5.96924448013
+      y: 1.91382217407
+      z: 1.8964111805
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.985497"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 16
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 17.9696350098
+        y: 33.6210441589
+        z: -2.24407219887
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.741393578077
+        w: 0.671070460076
+    scale: 
+      x: 3.89626193047
+      y: 1.97801315784
+      z: 0.986934542656
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.834320"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 17
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.04304218292
+        y: -6.01736211777
+        z: -0.78364187479
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.988359857391
+        w: 0.152134126014
+    scale: 
+      x: 0.502874672413
+      y: 0.418032884598
+      z: 1.20925724506
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.945840"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 18
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 36.3298072815
+        y: 6.91277503967
+        z: -1.32348442078
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.12826777653
+        w: 0.991739571412
+    scale: 
+      x: 3.8274538517
+      y: 1.61976063251
+      z: 0.933200001717
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.961795"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230177
+        nsecs: 999892712
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 19
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 39.2260932922
+        y: 15.8934412003
+        z: -1.97315740585
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.642728000405
+        w: 0.766094457293
+    scale: 
+      x: 0.88831281662
+      y: 0.670014798641
+      z: 0.0370336771011
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.619385"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects"
+    id: 0
+    type: 0
+    action: 3
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    scale: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 0.0
+      a: 0.0
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: ''
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 0
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.819234192371
+        y: -0.234242528677
+        z: -1.14011657238
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.997794085903
+        w: 0.0663849541417
+    scale: 
+      x: 4.98035955429
+      y: 2.7851099968
+      z: 2.02694439888
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.970750"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 1
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -4.70926094055
+        y: 0.617525696754
+        z: -1.41949248314
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.397643592836
+        w: 0.91753995721
+    scale: 
+      x: 3.48577404022
+      y: 3.06519365311
+      z: 1.46562087536
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.997436"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 2
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -10.531665802
+        y: 1.97045409679
+        z: -0.861327767372
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.966006589638
+        w: 0.258517443851
+    scale: 
+      x: 3.30645418167
+      y: 2.42855525017
+      z: 0.765366137028
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.961200"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 3
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -21.7755203247
+        y: 5.31365776062
+        z: -1.04599225521
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.987425585091
+        w: 0.158084515076
+    scale: 
+      x: 2.68922638893
+      y: 1.5450502634
+      z: 2.09198451042
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.981625"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 4
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 45.4686317444
+        y: 12.1765623093
+        z: -1.60115230083
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.996108611635
+        w: 0.0881341808037
+    scale: 
+      x: 5.91129255295
+      y: 2.74076032639
+      z: 1.1562731266
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.961833"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 5
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.865132987499
+        y: 2.68990302086
+        z: -1.38502955437
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.15113995575
+        w: 0.988512374114
+    scale: 
+      x: 0.862532436848
+      y: 0.513331413269
+      z: 1.53213727474
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.899357"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 6
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -1.82161819935
+        y: 6.21653842926
+        z: -1.33486056328
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.148122960322
+        w: 0.988968952306
+    scale: 
+      x: 4.35616254807
+      y: 1.93802511692
+      z: 1.72912359238
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.989116"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 7
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -9.58058261871
+        y: 8.07571315765
+        z: -1.37392950058
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992639691885
+        w: 0.121105086988
+    scale: 
+      x: 4.07140827179
+      y: 1.85403215885
+      z: 1.5925899744
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.996785"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 8
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 33.3956222534
+        y: 11.6576747894
+        z: -1.66330301762
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.14766999848
+        w: 0.989036688677
+    scale: 
+      x: 4.09933757782
+      y: 1.51321041584
+      z: 1.69198584557
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.983508"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 9
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 17.4179477692
+        y: 0.95896935463
+        z: -1.52789604664
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.911800767694
+        w: 0.410632877438
+    scale: 
+      x: 4.26375865936
+      y: 1.96002423763
+      z: 1.41442513466
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.990899"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 10
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 15.0683307648
+        y: 17.4869709015
+        z: -1.80729436874
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.403987450602
+        w: 0.914764526945
+    scale: 
+      x: 4.36264801025
+      y: 2.61980271339
+      z: 1.59426558018
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.967185"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 11
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.78609132767
+        y: -8.02447414398
+        z: -0.975767016411
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.721026053179
+        w: 0.6929079525
+    scale: 
+      x: 0.445231735706
+      y: 0.374172478914
+      z: 1.4964864254
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.878224"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 12
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 4.92284154892
+        y: 10.6431684494
+        z: -1.53187179565
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.112217714482
+        w: 0.993683644102
+    scale: 
+      x: 4.31945323944
+      y: 1.79289782047
+      z: 1.6038146019
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.990196"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 13
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -17.1164798737
+        y: 9.42759799957
+        z: -1.31100845337
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992353824225
+        w: 0.123425635688
+    scale: 
+      x: 4.09894275665
+      y: 2.10125660896
+      z: 1.7082079649
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.994826"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 14
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -26.6611328125
+        y: 11.7086820602
+        z: -1.35342597961
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992003644785
+        w: 0.126209226021
+    scale: 
+      x: 3.82864356041
+      y: 1.776222229
+      z: 1.37977492809
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.979826"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 15
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -36.6254119873
+        y: 12.9751749039
+        z: -0.950185358524
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0806162054777
+        w: 0.996745216901
+    scale: 
+      x: 5.98330831528
+      y: 1.9123980999
+      z: 1.90037071705
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.989544"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 16
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 2.78794813156
+        y: -4.60375261307
+        z: -1.0895819664
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.421748220366
+        w: 0.9067129858
+    scale: 
+      x: 0.553744256496
+      y: 0.53527122736
+      z: 1.67815935612
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.708431"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 17
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 18.155040741
+        y: 33.6653327942
+        z: -2.13509988785
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.559888927292
+        w: 0.828567673214
+    scale: 
+      x: 3.65905666351
+      y: 2.29293417931
+      z: 0.769455313683
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.683910"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 18
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 4.68665218353
+        y: -5.9684214592
+        z: -0.849804222584
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.996313863902
+        w: 0.0857827756464
+    scale: 
+      x: 0.474102050066
+      y: 0.57756716013
+      z: 1.01133835316
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.875778"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 19
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 36.271446228
+        y: 6.9228849411
+        z: -1.32028436661
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.125337536933
+        w: 0.992114157663
+    scale: 
+      x: 3.74423289299
+      y: 1.64280712605
+      z: 0.929585039616
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.981385"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 199890852
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 20
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 7.49484157562
+        y: -7.04268026352
+        z: -1.14134788513
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.928336344182
+        w: 0.371741351036
+    scale: 
+      x: 0.332157343626
+      y: 0.234335198998
+      z: 1.31981647015
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.643810"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects"
+    id: 0
+    type: 0
+    action: 3
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    scale: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 0.0
+      a: 0.0
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: ''
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 0
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.539730608463
+        y: -0.215778678656
+        z: -1.03108131886
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.997693397588
+        w: 0.0678813995796
+    scale: 
+      x: 4.43552589417
+      y: 2.66412830353
+      z: 1.77033948898
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.971177"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 1
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -4.70505905151
+        y: 0.61959284544
+        z: -1.41748511791
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.922364172681
+        w: 0.386321540889
+    scale: 
+      x: 3.51035881042
+      y: 3.04150867462
+      z: 1.46449255943
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.984277"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 2
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -10.5308074951
+        y: 1.97479069233
+        z: -0.860572755337
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.965348921711
+        w: 0.260962563122
+    scale: 
+      x: 3.30685257912
+      y: 2.44412255287
+      z: 0.764088988304
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.955516"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 3
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -21.7642288208
+        y: 5.32445049286
+        z: -1.04565036297
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.986539199515
+        w: 0.163524945558
+    scale: 
+      x: 2.5593662262
+      y: 1.52495062351
+      z: 2.09130072594
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.976430"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 4
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 45.4737205505
+        y: 12.1762113571
+        z: -1.60123932362
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.996135881808
+        w: 0.0878254232849
+    scale: 
+      x: 5.92257928848
+      y: 2.73608970642
+      z: 1.15609908104
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.950919"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 5
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.82378000021
+        y: 2.67141890526
+        z: -1.3853430748
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.9588021382
+        w: 0.284074743305
+    scale: 
+      x: 0.812557995319
+      y: 0.573327600956
+      z: 1.52829933167
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.891463"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 6
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -1.79755151272
+        y: 6.20893383026
+        z: -1.3344540596
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.986247226
+        w: 0.165276765482
+    scale: 
+      x: 4.31269741058
+      y: 1.9161438942
+      z: 1.72831058502
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.991794"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 7
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -9.59396076202
+        y: 8.08830451965
+        z: -1.37336444855
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992510551166
+        w: 0.122158936732
+    scale: 
+      x: 4.09649848938
+      y: 1.86950027943
+      z: 1.59285736084
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.994025"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 8
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 33.3958702087
+        y: 11.6608877182
+        z: -1.6611405611
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.145582266182
+        w: 0.989346149623
+    scale: 
+      x: 4.09943914413
+      y: 1.51001429558
+      z: 1.68974995613
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.982773"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 9
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 16.5927639008
+        y: -0.184622809291
+        z: -1.50821506977
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.90462631411
+        w: 0.426205621526
+    scale: 
+      x: 3.7842669487
+      y: 1.87804448605
+      z: 1.45309042931
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992925"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 10
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 16.219203949
+        y: 19.2453460693
+        z: -1.83527040482
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.451363091299
+        w: 0.892340383381
+    scale: 
+      x: 4.56011390686
+      y: 2.31126451492
+      z: 1.33973920345
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.987475"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 11
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 6.67923784256
+        y: 11.3331670761
+        z: -1.47020447254
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.168527514913
+        w: 0.985696949735
+    scale: 
+      x: 4.25693798065
+      y: 1.84100699425
+      z: 1.78583884239
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.996984"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 12
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -17.1253871918
+        y: 9.42084407806
+        z: -1.29992246628
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.99238536898
+        w: 0.123171747714
+    scale: 
+      x: 4.09231042862
+      y: 2.08212041855
+      z: 1.68766069412
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.997092"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 13
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -26.6633396149
+        y: 11.6975507736
+        z: -1.35423016548
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.991845310928
+        w: 0.127447554664
+    scale: 
+      x: 3.78455853462
+      y: 1.75720405579
+      z: 1.36815309525
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.981897"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 14
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -36.6592483521
+        y: 12.9972753525
+        z: -0.943430781364
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0835876340317
+        w: 0.996500430224
+    scale: 
+      x: 6.06915664673
+      y: 1.91402220726
+      z: 1.88686156273
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.983912"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 15
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 2.85561537743
+        y: -4.60725641251
+        z: -1.0900478363
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.868253620266
+        w: 0.49612060116
+    scale: 
+      x: 0.624405860901
+      y: 0.46570160985
+      z: 1.67722761631
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.607291"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 16
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 4.16276693344
+        y: -5.8484826088
+        z: -0.713354408741
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.995952450607
+        w: 0.0898816784979
+    scale: 
+      x: 0.282244890928
+      y: 0.509239971638
+      z: 1.09781181812
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.916894"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 499896765
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 17
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 36.3094177246
+        y: 6.89703226089
+        z: -1.32356989384
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.132059701751
+        w: 0.99124176424
+    scale: 
+      x: 3.83852744102
+      y: 1.63179588318
+      z: 0.931165754795
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.986048"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects"
+    id: 0
+    type: 0
+    action: 3
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    scale: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 0.0
+      a: 0.0
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: ''
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 0
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.550581037998
+        y: -0.268301516771
+        z: -1.03821802139
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.997807776948
+        w: 0.0661788505705
+    scale: 
+      x: 4.43365430832
+      y: 2.78473258018
+      z: 1.75003516674
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.963242"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 1
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -4.7065410614
+        y: 0.62591612339
+        z: -1.41827237606
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.921535476651
+        w: 0.388294173628
+    scale: 
+      x: 3.51988315582
+      y: 3.0582010746
+      z: 1.46548962593
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992474"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 2
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -10.4819564819
+        y: 1.87711107731
+        z: -1.30258357525
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.141405927439
+        w: 0.989951697652
+    scale: 
+      x: 3.6441321373
+      y: 1.86306726933
+      z: 1.64811062813
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.950002"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 3
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -21.7438163757
+        y: 5.32478904724
+        z: -1.0449668169
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.987121295359
+        w: 0.159973586098
+    scale: 
+      x: 2.59602618217
+      y: 1.5262567997
+      z: 2.0899336338
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.978178"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 4
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 45.467048645
+        y: 12.1830854416
+        z: -1.60106575489
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.996348655823
+        w: 0.0853777256603
+    scale: 
+      x: 5.94311141968
+      y: 2.76898121834
+      z: 1.15691256523
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.941114"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 5
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.935280442238
+        y: 2.67391014099
+        z: -1.38506400585
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.157352918494
+        w: 0.987542434046
+    scale: 
+      x: 1.00748991966
+      y: 0.52727407217
+      z: 1.52885746956
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.855189"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 6
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -1.80668914318
+        y: 6.23416805267
+        z: -1.33456540108
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.150790262593
+        w: 0.988565777633
+    scale: 
+      x: 4.34364366531
+      y: 1.9910722971
+      z: 1.72646141052
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.987499"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 7
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -9.61614608765
+        y: 8.05582046509
+        z: -1.37535774708
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.995867748101
+        w: 0.0908153527343
+    scale: 
+      x: 4.11803865433
+      y: 1.76542186737
+      z: 1.59404921532
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992365"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 8
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 33.3891716003
+        y: 11.6517620087
+        z: -1.66437160969
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.148681879452
+        w: 0.988885078623
+    scale: 
+      x: 4.11495876312
+      y: 1.48920559883
+      z: 1.69226622581
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.983811"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 9
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 15.9845218658
+        y: -0.88503497839
+        z: -1.63298106194
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.889479706624
+        w: 0.456974672715
+    scale: 
+      x: 4.14636135101
+      y: 1.78465867043
+      z: 1.19519746304
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.983402"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 10
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 16.7417526245
+        y: 20.170879364
+        z: -1.75456464291
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.465243101701
+        w: 0.885182950762
+    scale: 
+      x: 3.82723760605
+      y: 2.44830536842
+      z: 1.05814242363
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.990953"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 11
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.77604103088
+        y: -8.01633167267
+        z: -0.977563917637
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.781521001727
+        w: 0.623878933656
+    scale: 
+      x: 0.496199727058
+      y: 0.350074738264
+      z: 1.50066053867
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.931826"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 12
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 7.82891082764
+        y: 11.8020181656
+        z: -1.50152409077
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.184146768319
+        w: 0.982898757613
+    scale: 
+      x: 4.29690265656
+      y: 1.93554747105
+      z: 1.76462769508
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.998321"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 13
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -17.1214046478
+        y: 9.42876625061
+        z: -1.30901551247
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992394331697
+        w: 0.123099514282
+    scale: 
+      x: 4.09509754181
+      y: 2.09850859642
+      z: 1.70526647568
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992632"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 14
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -26.6594963074
+        y: 11.7068691254
+        z: -1.35366463661
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.126863853009
+        w: 0.991920139326
+    scale: 
+      x: 3.83037781715
+      y: 1.77858901024
+      z: 1.37619018555
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.990425"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 15
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -36.6538391113
+        y: 12.9717264175
+        z: -0.948147416115
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0790738115399
+        w: 0.996868763844
+    scale: 
+      x: 6.06316614151
+      y: 1.90964663029
+      z: 1.89629483223
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.988131"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 16
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 2.83372449875
+        y: -4.66520595551
+        z: -1.14153695107
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.976097340932
+        w: 0.217333800925
+    scale: 
+      x: 0.517038226128
+      y: 0.33099001646
+      z: 1.55310928822
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.610128"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 17
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 18.0442676544
+        y: 34.0956726074
+        z: -2.22865200043
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.755269639868
+        w: 0.655414198117
+    scale: 
+      x: 2.04508161545
+      y: 1.9733453989
+      z: 0.954929590225
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.797604"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 18
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 7.48981189728
+        y: -7.02109146118
+        z: -1.13420367241
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.995952450607
+        w: 0.0898816784979
+    scale: 
+      x: 0.36309787631
+      y: 0.347016572952
+      z: 1.30389726162
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.850690"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 699894667
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 19
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 36.2921485901
+        y: 6.91679763794
+        z: -1.3217959404
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.126831222312
+        w: 0.991924312156
+    scale: 
+      x: 3.77473449707
+      y: 1.62473964691
+      z: 0.930055260658
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.983273"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects"
+    id: 0
+    type: 0
+    action: 3
+    pose: 
+      position: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.0
+    scale: 
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 0.0
+      a: 0.0
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: ''
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---
+markers: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 0
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.545848369598
+        y: -0.213183030486
+        z: -1.0206938982
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.997741264395
+        w: 0.0671741715525
+    scale: 
+      x: 4.43819999695
+      y: 2.66590499878
+      z: 1.77905297279
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.978981"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 1
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -4.71651506424
+        y: 0.616681993008
+        z: -1.41791808605
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.397826560269
+        w: 0.917460641087
+    scale: 
+      x: 3.48899245262
+      y: 3.08540654182
+      z: 1.46362662315
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.998146"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 2
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -10.5255413055
+        y: 1.9708994627
+        z: -0.861385405064
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.965629514677
+        w: 0.259922373767
+    scale: 
+      x: 3.3037083149
+      y: 2.42930746078
+      z: 0.76594722271
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.964028"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 3
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -21.7540168762
+        y: 5.32354164124
+        z: -1.04485285282
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.986009692035
+        w: 0.166687993608
+    scale: 
+      x: 2.57873654366
+      y: 1.51450073719
+      z: 2.08970570564
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.978674"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 4
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 45.469669342
+        y: 12.1738262177
+        z: -1.59975659847
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.996096383797
+        w: 0.088272273038
+    scale: 
+      x: 5.91829299927
+      y: 2.73032450676
+      z: 1.15533852577
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.961493"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 5
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 0.82168251276
+        y: 2.66776943207
+        z: -1.38506400585
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.958711419471
+        w: 0.284380755636
+    scale: 
+      x: 0.812245607376
+      y: 0.583074331284
+      z: 1.52885746956
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.903518"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 6
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -1.78004157543
+        y: 6.23478031158
+        z: -1.3360440731
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.985667216133
+        w: 0.168701330878
+    scale: 
+      x: 4.30013084412
+      y: 1.95953679085
+      z: 1.72838294506
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.992380"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 7
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -9.58521556854
+        y: 8.08149242401
+        z: -1.37416923046
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992895222373
+        w: 0.118991921528
+    scale: 
+      x: 4.06735992432
+      y: 1.84930849075
+      z: 1.59470009804
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.991962"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 8
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 33.3927383423
+        y: 11.6500120163
+        z: -1.66350829601
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.150370412137
+        w: 0.988629728035
+    scale: 
+      x: 4.13212060928
+      y: 1.52534985542
+      z: 1.69053959846
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.983440"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 9
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 15.3973731995
+        y: -1.80240142345
+        z: -1.61685526371
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.883749578449
+        w: 0.467960129274
+    scale: 
+      x: 4.53269529343
+      y: 1.77421784401
+      z: 1.23511338234
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.976087"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 10
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 17.3424777985
+        y: 20.7643089294
+        z: -1.8187212944
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.418865099495
+        w: 0.908048472509
+    scale: 
+      x: 2.90253591537
+      y: 2.43083453178
+      z: 1.17457711697
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.937758"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 11
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 5.78603458405
+        y: -8.06652736664
+        z: -0.97631084919
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.752542824492
+        w: 0.658543314676
+    scale: 
+      x: 0.58021491766
+      y: 0.379468232393
+      z: 1.49885082245
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.944856"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 12
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 9.00511741638
+        y: 12.1607723236
+        z: -1.53249955177
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.17107579392
+        w: 0.985257871186
+    scale: 
+      x: 4.47865724564
+      y: 1.81297564507
+      z: 1.72153317928
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.988836"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 13
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -17.1215248108
+        y: 9.42454910278
+        z: -1.30644667149
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.992242168434
+        w: 0.124320067492
+    scale: 
+      x: 4.101603508
+      y: 2.08846068382
+      z: 1.70001292229
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.994906"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 14
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -26.6527385712
+        y: 11.7091054916
+        z: -1.35377073288
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.12566403879
+        w: 0.992072854862
+    scale: 
+      x: 3.80199766159
+      y: 1.782558918
+      z: 1.38081228733
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.986873"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 15
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: -36.6757545471
+        y: 12.9916505814
+        z: -0.944013059139
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0818432535008
+        w: 0.996645213632
+    scale: 
+      x: 6.11258363724
+      y: 1.90456914902
+      z: 1.88802611828
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.988737"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 16
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 17.9926338196
+        y: 33.8811225891
+        z: -2.24132156372
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.740959745418
+        w: 0.67154944395
+    scale: 
+      x: 4.36902713776
+      y: 1.98049533367
+      z: 0.987256288528
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.897435"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 17
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 7.53332662582
+        y: -6.9766497612
+        z: -1.12063694
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.995952450607
+        w: 0.0898816784979
+    scale: 
+      x: 0.438915371895
+      y: 0.406653165817
+      z: 1.3016859293
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.878056"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1671230178
+        nsecs: 899890661
+      frame_id: "map"
+    ns: "objects/rslidar"
+    id: 18
+    type: 1
+    action: 0
+    pose: 
+      position: 
+        x: 36.3013381958
+        y: 6.92511510849
+        z: -1.32153606415
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.125053341997
+        w: 0.992150019733
+    scale: 
+      x: 3.78313064575
+      y: 1.64403223991
+      z: 0.931972444057
+    color: 
+      r: 0.0
+      g: 0.0
+      b: 1.0
+      a: 0.5
+    lifetime: 
+      secs: 0
+      nsecs:         0
+    frame_locked: False
+    points: []
+    colors: []
+    text: "0.982055"
+    mesh_resource: ''
+    mesh_use_embedded_materials: False
+---

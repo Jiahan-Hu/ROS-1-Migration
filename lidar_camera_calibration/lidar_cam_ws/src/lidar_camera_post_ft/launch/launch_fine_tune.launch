@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Include the calibration_publisher launch file with arguments -->
+  <include file="$(find lidar_camera_calibration_gui)/launch/calibration.launch">
+    <arg name="intrinsics_file" value="/path/to/intrinsics_file.yaml"/>
+    <arg name="target_frame" value="veh2_rslidar"/>
+    <arg name="camera_frame" value="zed2i_v2_left_camera_optical_frame"/>
+    <arg name="camera_id" value="/"/>
+    <arg name="image_topic_src" value="/zed2i_v2/zed_node3/left_update_sync/image_rect_color"/>
+    <arg name="image_raw_topic_str" value="/zed2i_v2/zed_node3/left_update_sync/image_rect_color"/>
+    <arg name="point_cloud_topic_name_str" value="/veh_2/sync_time/rslidar_points"/>
+    <arg name="which_camera" value="1"/>
+  </include>
+
+  <!-- Launch the gui2pryxyz_all_node node -->
+  <node name="gui2pryxyz_all_node" pkg="lidar_camera_calibration_gui" type="gui2pryxyz_all.py" output="screen" />
+
+</launch>

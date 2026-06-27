@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- parameters for TRC proving ground -->
+<!--     <param name="yaw_misalignment" value="-1" />
+    <param name="pitch_misalignment" value="0" />
+    <param name="roll_misalignment" value="0" />
+    <param name="lever_x" value="-1.25" />
+    <param name="lever_y" value="0" />
+    <param name="lever_z" value="-1.77" /> -->
+
+
+    <!-- parameters for road test 1 second half -->
+    <arg name="yaw_misalignment_" default="-2.5" />
+    <arg name="pitch_misalignment_" default="0" />
+    <arg name="roll_misalignment_" default="0" />
+    <arg name="lever_x_" default="0.1" />
+    <arg name="lever_y_" default="0" />
+    <arg name="lever_z_" default="-1.77" />
+
+    <node pkg="tf_publisher" type="tf_publisher" name="tf_publisher_01" output="screen">
+
+        <param name="yaw_misalignment" value="$(arg yaw_misalignment_)" />
+        <param name="pitch_misalignment" value="$(arg pitch_misalignment_)" />
+        <param name="roll_misalignment" value="$(arg roll_misalignment_)" />
+        <param name="lever_x" value="$(arg lever_x_)" />
+        <param name="lever_y" value="$(arg lever_y_)" />
+        <param name="lever_z" value="$(arg lever_z_)" />
+
+        <param name="pcd_map_path" value="/home/carma/catkin_ws_carma_DATA_split/carma_load/pcd_maps/2021-09-15-seg_2.pcd" />
+
+    </node>
+
+<!--     <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find mapping_trc)/rviz_cfg/mapping_trc.rviz" />
+    </group> -->
+
+</launch>

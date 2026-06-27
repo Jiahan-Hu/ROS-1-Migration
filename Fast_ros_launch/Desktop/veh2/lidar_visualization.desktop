@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch rslidar_sdk start.launch --screen'
+Name=LiDAR Visualization
+Comment=LiDAR Visualization
+Icon=/home/dev/Documents/icons/lidar2.svg

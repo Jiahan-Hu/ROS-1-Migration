@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<launch>
+<group ns="gps2">
+    <arg name="inspvax_topic" default="/novatel/oem7/inspva" />
+    <arg name="gps_can_time_topic" default="/gps_can_time_hz10" />
+    <arg name="gps_time_hz" default="10" />
+    <node pkg="nmea_gps_driver" type="gps_time_convert.py" name="gps_time_convert" output="screen">
+        <param name="inspvax_topic" value="$(arg inspvax_topic)" />
+        <param name="gps_can_time_topic" value="$(arg gps_can_time_topic)" />
+        <param name="gps_time_hz" value="$(arg gps_time_hz)" />
+    </node>
+</group>
+</launch>

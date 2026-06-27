@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<launch>
+    
+    <!-- <arg name="input_topic1" default="/new/rslidar_points" />
+    <arg name="input_topic2" default="/rslidar_points" />
+    <arg name="output_topic1" default="/syn_pc_new" />
+    <arg name="output_topic2" default="/syn_pc_rs" /> -->
+
+    <!-- <arg name="input_topic1" default="/new/rslidar_points" />
+    <arg name="input_topic2" default="/ouster/points" />
+    <arg name="output_topic1" default="/syn_pc_new" />
+    <arg name="output_topic2" default="/syn_pc_os" /> -->
+
+    <!-- <arg name="input_topic1" default="/ouster_nw/points" />
+    <arg name="input_topic2" default="/ouster_se/points" />
+    <arg name="output_topic1" default="/syn_pc_nw" />
+    <arg name="output_topic2" default="/syn_pc_se" /> -->
+
+    <arg name="input_topic1" default="/ouster_nw/points" />
+    <arg name="input_topic2" default="/veh_1/tchange/rslidar_points" />
+    <arg name="output_topic1" default="/sync/ouster_nw/points" />
+    <arg name="output_topic2" default="/sync/veh_1/tchanged_rslidar_points" />
+
+    <node pkg="two_lidar_sync" type="two_lidar_syn" name="two_lidar_syn" output="screen" >
+        <param name="input_topic1" value="$(arg input_topic1)" />
+        <param name="input_topic2" value="$(arg input_topic2)" />
+        <param name="output_topic1" value="$(arg output_topic1)" />
+        <param name="output_topic2" value="$(arg output_topic2)" />
+    </node>
+
+
+    <!-- <arg name="rviz" default="false" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_sync" args="-d $(find mapping_ucla)/rviz_cfg/mapping_ucla.rviz" />
+    </group> -->
+
+    <!-- <node pkg="rosbag" type="play" name="player1"  args="/media/zhaoliang/WD_BLACK/my_data/rosbag/rosbag_gps/Dec-16/selected_data/lidar_new/2022-12-16-14-04-54_1_lidar.bag"/>
+    <node pkg="rosbag" type="play" name="player2"  args="/media/zhaoliang/WD_BLACK/my_data/rosbag/rosbag_gps/Dec-16/selected_data/lidar_rs/2022-12-16-14-05-46_1_lidar.bag"/>
+ -->
+
+</launch>

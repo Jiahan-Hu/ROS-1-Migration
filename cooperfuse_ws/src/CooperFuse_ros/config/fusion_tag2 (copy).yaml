@@ -1,0 +1,8 @@
+v2xfusion: {
+  sub_ego_bbx: "/tracking/transformed_objects_box_score_label",
+  sub_agent1_bbx: "/tracking2/transformed_objects_box_score_label",
+
+  pub_fusion_bbx: "/fusion/bbx",
+  
+  pub_same_pose: "/fusion/same_position",
+}

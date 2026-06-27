@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<launch>
+    <param name="use_sim_time" value="false" />
+
+    <!-- Friday 128-->
+<!--     <param name="fix_x" value="3.8" />
+    <param name="fix_y" value="-3.1" />
+    <param name="fix_z" value="0.84" /> 
+    <param name="fix_heading" value="76.432533" />
+    <param name="fix_pitch" value="5.007970" />
+    <param name="fix_roll" value="-2.477880" /> -->
+    
+    <param name="fix_x" value="3.8" />
+    <param name="fix_y" value="-3.4" />
+    <param name="fix_z" value="0.931" /> 
+    <param name="fix_heading" value="73.432533" />
+    <param name="fix_pitch" value="4.007970" />
+    <param name="fix_roll" value="-4.477880" />
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="0" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" />
+    
+    <!-- <param name="lidar1_topic" value="/rslidar_points" />
+    <param name="lidar2_topic" value="/velodyne_points2" />
+    <param name="transformed_lidar1_topic" value="/transformed_rslidar_points" />
+    <param name="transformed_lidar2_topic" value="/transformed_velodyne_points2" /> -->
+
+    <!-- <param name="bbx1_topic" value="/detection/lidar_detector2/objects_markers/boxes" />
+    <param name="bbx2_topic" value="/detection/lidar_detector/objects_markers/boxes" /> -->
+    <!-- <param name="bbx1_topic" value="/detection/lidar_detector2/objects_markers/sync_boxes" />
+    <param name="bbx2_topic" value="/detection/lidar_detector/objects_markers/sync_boxes" />
+    <param name="transformed_bbx1_topic" value="/detection/lidar_detector2/objects_markers/transformed_boxes" />
+    <param name="transformed_bbx2_topic" value="/detection/lidar_detector/objects_markers/transformed_boxes" /> -->
+    <!-- for tracking bbx topic -->
+    <param name="bbx1_topic" value="/tracking2/objects_box_score" />
+    <param name="bbx2_topic" value="/tracking/objects_box_score" />
+    <param name="transformed_bbx1_topic" value="/tracking2/transformed_objects_box_score" />
+    <param name="transformed_bbx2_topic" value="/tracking/transformed_objects_box_score" />
+
+<!--     <param name="lidar1_topic" value="/new/rslidar_points" />
+    <param name="lidar2_topic" value="/rslidar_points" />
+    <param name="transformed_lidar1_topic" value="/transformed_new" />
+    <param name="transformed_lidar2_topic" value="/transformed_rs" /> -->
+
+    <!-- <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher" args="0 0 0 0 0 0 /map /fix_lidar 10" /> -->
+    <node pkg="ros_transform_utils" type="bbx_manual_tf_pub" name="bbx_manual_tf_pub_node" output="screen" />
+
+    <arg name="rviz" default="false" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_sync" args="-d $(find ros_transform_utils)/rviz/rviz_show_2transformed_lidar.rviz" />
+    </group>
+
+</launch>

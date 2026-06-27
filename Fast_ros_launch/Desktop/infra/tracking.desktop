@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch data_project new_detection_tracking_2.launch --screen'
+Name=Detection Tracking
+Comment=Detection Tracking
+Icon=/home/zhaoliang/Documents/lincoln_car/icons/launch_track.svg

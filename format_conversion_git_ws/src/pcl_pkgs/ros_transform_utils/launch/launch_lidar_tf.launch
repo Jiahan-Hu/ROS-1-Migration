@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="velodyne_1_side_topic" default="/hardware_interface/velodyne_1_side/velodyne_points"/>
+  <arg name="velodyne_1_front_topic" default="/hardware_interface/velodyne_1_front/velodyne_points"/>
+  <!-- ego is velodyne_1_side -->
+  <!-- <arg name="x" default="-2.26"/>
+  <arg name="y" default="-0.26"/>
+  <arg name="z" default="-1.0"/>
+  <arg name="heading" default="172"/>
+  <arg name="pitch" default="0.0"/>
+  <arg name="roll" default="0.0"/> -->
+
+  <arg name="x" default="-2.26"/>
+  <arg name="y" default="-0.26"/>
+  <arg name="z" default="-1.2"/>
+  <arg name="heading" default="-188"/>
+  <arg name="pitch" default="0.0"/>
+  <arg name="roll" default="0.0"/>
+
+  <node name="lidar_transformer_node" pkg="lidar_transformer" type="lidar_transformer_node" output="screen">
+    <param name="velodyne_1_side_topic" value="$(arg velodyne_1_side_topic)"/>
+    <param name="velodyne_1_front_topic" value="$(arg velodyne_1_front_topic)"/>
+    <param name="x" value="$(arg x)"/>
+    <param name="y" value="$(arg y)"/>
+    <param name="z" value="$(arg z)"/>
+    <param name="heading" value="$(arg heading)"/>
+    <param name="pitch" value="$(arg pitch)"/>
+    <param name="roll" value="$(arg roll)"/>
+  </node>
+</launch>

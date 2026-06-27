@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<launch>
+  <arg name="pcd_file1" default="/home/zhaoliang/zzl/zhz03_github/smart_intersection_late_fusion/late_fusion_ws/pcl_pcd/velodyne_mid/1684165266987172_ver.pcd" />
+  <arg name="scale1" default="0.1" />
+  <arg name="frame_id1" default="/velodyne1" />
+  <arg name="cloud_pcd1" default="/velodyne_1" />
+
+  <arg name="pcd_file2" default="/home/zhaoliang/zzl/zhz03_github/smart_intersection_late_fusion/late_fusion_ws/pcl_pcd/ouster/1674016399400443_ver.pcd" />
+  <arg name="scale2" default="0.1" />
+  <arg name="frame_id2" default="/os_sensor1" />
+  <arg name="cloud_pcd2" default="/ouster_points_1" />
+
+  <!-- Launch the first instance of my_pcd_to_pointcloud -->
+  <node pkg="pcl_ros" type="pcd_to_pointcloud" name="pcd_to_pointcloud_1" output="screen" args="cloud_pcd:=$(arg cloud_pcd1)">
+    <param name="file_name" value="$(arg pcd_file1)" />
+    <param name="interval" value="$(arg scale1)" />
+    <param name="frame_id" value="$(arg frame_id1)" />
+    <!-- <param name="cloud_pcd" value="/velodyne_1" /> -->
+  </node>
+
+  <!-- Launch the second instance of my_pcd_to_pointcloud -->
+  <node pkg="pcl_ros" type="pcd_to_pointcloud" name="pcd_to_pointcloud_2" output="screen" args="cloud_pcd:=$(arg cloud_pcd2)">
+    <param name="file_name" value="$(arg pcd_file2)" />
+    <param name="interval" value="$(arg scale2)" />
+    <param name="frame_id" value="$(arg frame_id2)" />
+    <!-- <param name="cloud_pcd" value="/ouster_points_1" /> -->
+  </node>
+</launch>

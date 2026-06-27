@@ -1,0 +1,3 @@
+[submodule "scripts/CooperFuse"]
+	path = scripts/CooperFuse
+	url = https://github.com/zhz03/CooperFuse.git

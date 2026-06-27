@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="node_name" default="lidar_cam_sync_node"/>
+  <arg name="pointcloud_topic" default="/veh_2/rslidar_points"/>
+  <arg name="image_topic" default="/zed2i_v2/zed_node1/left_update/image_rect_color/compressed"/>
+  <arg name="pointcloud_output_topic" default="/veh_2/sync/rslidar_points"/>
+  <arg name="image_output_topic" default="/zed2i_v2/zed_node1/left_update_sync/image_rect_color/compressed"/>
+
+  <node pkg="lidar_camera_sync" type="lidar_cam_sync" name="$(arg node_name)">
+    <param name="pointcloud_topic" value="$(arg pointcloud_topic)"/>
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="pointcloud_output_topic" value="$(arg pointcloud_output_topic)"/>
+    <param name="image_output_topic" value="$(arg image_output_topic)"/>
+  </node>
+</launch>

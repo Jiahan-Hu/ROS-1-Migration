@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <arg name="detection_object_topic" default="/detection/lidar_detector/objects"/>
+    <arg name="segment_cloud_topic" default="/segment/clouds_segmented"/>
+    <arg name="tracking_topic" default="/tracking/tracking_objects_local"/>
+    <arg name="tracking_objects_topic" default="/detection/object_tracker/objects"/>
+
+    <node pkg="data_csv" type="data_csv" name="data_csv" output="screen">
+
+        <param name="detection_object_topic" value="$(arg detection_object_topic)" />
+        <param name="segment_cloud_topic" value="$(arg segment_cloud_topic)" />
+        <param name="tracking_topic" value="$(arg tracking_topic)" />
+        <param name="tracking_objects_topic" value="$(arg tracking_objects_topic)" />
+
+    </node>
+
+</launch>

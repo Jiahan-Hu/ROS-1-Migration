@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch tf_publisher infra_conversion_all.launch --screen'
+Name=Format Conversion
+Comment=Format Conversion
+Icon=/home/zhaoliang/Documents/lincoln_car/icons/format_conversion1.svg

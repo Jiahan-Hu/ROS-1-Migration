@@ -1,0 +1,6 @@
+v2xfusion: {
+  sub_ego_bbx: "/infra_nw/tracking/bbx",
+  sub_agent1_bbx: "/veh1/tracking/bbx",
+
+  pub_fusion_bbx: "/fusion/bbx",
+}

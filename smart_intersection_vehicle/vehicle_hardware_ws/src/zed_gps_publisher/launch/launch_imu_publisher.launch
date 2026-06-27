@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="node_name" default="gps_imu_sync_node1"/>
+  <arg name="time_ref_topic" default="/veh_2/gps_can_time_hz100"/>
+  <arg name="gps_imu_topic" default="/veh_2/gps/imu"/>
+  <arg name="output_imu_topic" default="/gps_sync/imu"/>
+
+  <node pkg="zed_gps_publisher" type="imu_gps_sync_publisher.py" name="$(arg node_name)">
+    <param name="time_ref_topic" value="$(arg time_ref_topic)"/>
+    <param name="gps_imu_topic" value="$(arg gps_imu_topic)"/>
+    <param name="output_imu_topic" value="$(arg output_imu_topic)"/>
+  </node>
+</launch>

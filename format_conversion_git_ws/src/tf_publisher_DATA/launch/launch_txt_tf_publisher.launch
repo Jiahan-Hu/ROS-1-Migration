@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="txt_tf_publisher_node" pkg="tf_publisher" type="txt_tf_publisher.py">
+    <param name="data_path" type="string" value="/media/zhaoliang/Elements/from_loc/data_localization/carXXlidar/pose_APR3_xx_new_selected.txt" />
+    <param name="parent_frame" type="string" value="map" />
+    <param name="child_frame" type="string" value="veh1_rslidar" />
+  </node>
+</launch>

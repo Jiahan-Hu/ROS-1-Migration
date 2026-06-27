@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim1">  
+
+    <arg name="input_topic1" default="/tracking/transformed_objects_header_box_score_label" />
+    <arg name="input_topic2" default="/tracking2/transformed_objects_header_bbx_score_label" />
+    <arg name="output_topic1" default="/tracking/transformed_objects_bbx_score_label_sync" />
+    <arg name="output_topic2" default="/tracking2/transformed_objects_box_score_label_sync" />
+
+    <node pkg="bbx_sync" type="two_header_bbx_sync_repub" name="two_header_bbx_sync_repub_node" output="screen" >
+        <param name="input_topic1" value="$(arg input_topic1)" />
+        <param name="input_topic2" value="$(arg input_topic2)" />
+        <param name="output_topic1" value="$(arg output_topic1)" />
+        <param name="output_topic2" value="$(arg output_topic2)" />
+    </node>
+
+    <node pkg="bbx_sync" type="bbx2headerbbxv2" name="marker_converter_node_v2" output="screen">
+        <!-- Input and Output topics as ROS parameters -->
+        <param name="input_topic" value="/fusion/bbx" />
+        <param name="output_topic" value="/fusion/header_bbx_new" />
+    </node>
+
+    <node name="bbx_pcl_sync_node" type="bbx_pcl_sync" pkg="synced_visualization" output="screen">
+        <param name="input_topic_bbx" type="string" value="/fusion/header_bbx_new" />
+        <param name="input_topic_pc" type="string" value="/ouster_se/pc_subset" />
+        <param name="output_topic_vis_bbx" type="string" value="/vis/detected_bbx" />
+        <param name="output_topic_vis_pc" type="string" value="/vis/pc_subset" />
+    </node>
+
+</group>
+
+</launch>

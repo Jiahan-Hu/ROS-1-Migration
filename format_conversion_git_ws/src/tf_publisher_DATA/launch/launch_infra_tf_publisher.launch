@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="nw_infra_tf_publisher" pkg="tf_publisher" type="infra_tf_publisher.py">
+    <param name="x" type="double" value="29.252044126767487" />
+    <param name="y" type="double" value="-157.99108715588525" />
+    <param name="z" type="double" value="2.504110691351501" />
+    <param name="roll" type="double" value="-0.02814657310165272" />
+    <param name="yaw" type="double" value="-0.04571448047729036" />
+    <param name="pitch" type="double" value="-0.05262715935993412" />
+    <!-- <param name="subscribed_topic" type="string" value="/detection/lidar_detector2/points_cluster" /> -->
+    <param name="subscribed_topic" type="string" value="/ouster_nw/points" />
+    <!-- <param name="subscribed_topic" type="string" value="/sync_final/ouster_nw/points" /> -->
+    <!-- <param name="subscribed_topic" type="string" value="/ouster_nw/points" /> -->
+  </node>
+</launch>

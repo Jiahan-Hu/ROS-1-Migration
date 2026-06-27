@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<launch>
+  <!-- Specify the node name and namespace -->
+  <node name="two_bbx_syn_node" pkg="bbx_sync" type="bbx_sync_new.cpp" output="screen">
+
+    <!-- Set the input and output topics as parameters -->
+    <param name="input_topic1" value="/detected_bbx1" />
+    <param name="input_topic2" value="/detected_bbx2" />
+    <param name="output_topic1" value="/sync_bbx1" />
+    <param name="output_topic2" value="/sync_bbx2" />
+
+    <!-- Set any other required parameters if needed -->
+
+    <!-- If required, remap the topics -->
+    <!-- <remap from="input_topic1" to="/custom_input_topic1" />
+    <remap from="input_topic2" to="/custom_input_topic2" />
+    <remap from="output_topic1" to="/custom_output_topic1" />
+    <remap from="output_topic2" to="/custom_output_topic2" /> -->
+
+  </node>
+</launch>

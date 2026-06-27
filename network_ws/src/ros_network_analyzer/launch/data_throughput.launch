@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<launch>
+<launch>
+    <!-- Define the target_host as an argument -->
+    <arg name="target_host" default="192.168.1.1" />
+    <!-- Define the list of topics to monitor as an argument -->
+    <arg name="monitored_topics" default="['/topic1', '/topic2']" />
+    <!-- Launch the data transfer monitor node -->
+    <node pkg="ros_network_analyzer" type="data_throughput.py" name="data_transfer_monitor" output="screen">
+        <!-- Pass the target_host argument as a private parameter -->
+        <rosparam param="target_host">$(arg target_host)</rosparam>
+        <!-- Pass the monitored_topics argument as a private parameter -->
+        <rosparam param="monitored_topics">$(arg monitored_topics)</rosparam>
+    </node>
+</launch>
+

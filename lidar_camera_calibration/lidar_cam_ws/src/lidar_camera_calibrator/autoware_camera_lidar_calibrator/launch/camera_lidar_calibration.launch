@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+roslaunch autoware_camera_lidar_calibrator camera_lidar_calibration.launch intrinsics_file:=/home/ne0/Desktop/calib_heat_camera1_rear_center_fisheye.yaml compressed_stream:=True camera_id:=camera1
+-->
+<launch>
+    <arg name="image_src" default="/zed2i_v1/zed_node1/left/image_rect_color" />
+    <!-- <arg name="camera_info_src" default="/zed2i/zed_node/left_raw/camera_info" /> -->
+    <arg name="camera_info_src" default="/zed2i_v1/zed_node1/left/camera_info"/>
+    <arg name="camera_id" default="/" />
+    <arg name="intrinsics_file" default="/home/carma/autoware.ai/Tiguan_rear_cam_intrinsics.yaml"/>
+    <arg name="compressed_stream" default="false" />
+    <arg name="target_frame" default="velodyne"/>
+    <arg name="camera_frame" default="camera"/>
+
+    <arg name="rviz" default="true" />
+
+    <!-- <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d /home/carma/autoware.ai/cam_lidar_calibration.rviz" /> -->
+
+
+    <node if="$(arg compressed_stream)" name="decompress" type="republish" pkg="image_transport" output="screen" args="compressed in:=/$(arg camera_id)/$(arg image_src) raw out:=/$(arg camera_id)/$(arg image_src)">
+
+    </node>
+
+    <node pkg="calibration_publisher" type="calibration_publisher" name="calibration_publisher" ns="$(arg camera_id)">
+
+        <!-- <remap from="/zed2i/zed_node/left_raw/image_raw_color" to="/image_raw" /> -->
+
+        <param name="register_lidar2camera_tf" type="bool" value="true"/>
+        <param name="publish_extrinsic_mat" type="bool" value="false"/>
+        <param name="publish_camera_info" type="bool" value="true"/>
+        <!-- <param name="image_topic_src" value="$(arg image_src)"/> -->
+        <!-- <param name="image_topic_src" value="/zed2i/zed_node/left_raw/image_raw_color"/> -->
+        <param name="image_topic_src" value="/zed2i_v1/zed_node1/left/image_rect_color"/>   
+        <param name="calibration_file" value="$(arg intrinsics_file)"/>
+        <param name="target_frame" type="str" value="$(arg target_frame)"/>
+        <param name="camera_frame" type="str" value="$(arg camera_frame)"/>
+    </node>
+
+    <node pkg="pcd_republisher" type="pcd_republisher" name="pcd_republisher" output="screen">
+        <param name="image_raw_topic_str" type="str" value="/zed2i_v1/zed_node1/left/image_rect_color"/>
+        <param name="point_cloud_topic_name_str" type="str" value="/rslidar_points"/>
+        <param name="point_cloud_output_topic_name_str" type="str" value="/new/rslidar_repub"/>
+        <param name="lidar_new_frame_id_str" type="str" value="newrslidar_repub"/>
+        <param name="point_cloud_transformed_topic_name_str" type="str" value="/new/rslidar_points_transformed"/>
+        <param name="which_camera" type="int" value="2"/> <!-- //front 1, left 2, rear 3, right 4; -->
+        <param name="cross_check" type="int" value="0"/>
+    </node>
+
+    <node pkg="image_processor" type="image_rectifier" name="rectifier" ns="$(arg camera_id)" output="screen">
+        <!-- <param name="image_src" value="$(arg image_src)" /> -->
+        <param name="image_src" value="/zed2i_v1/zed_node1/left/image_rect_color" />
+        <param name="camera_info_src" value="$(arg camera_info_src)" />
+    </node>
+
+    <node pkg="image_view2" type="image_view2" name="image_view2" ns="$(arg camera_id)" output="screen">
+        <remap from="image" to="image_rectified" />
+    </node>
+
+    <node pkg="autoware_camera_lidar_calibrator" type="autoware_camera_lidar_calibration_node" name="autoware_camera_lidar_calibration_node" ns="$(arg camera_id)" output="screen">
+        <param name="image_src" value="/image_rectified" />
+        <param name="camera_info_src" value="$(arg camera_info_src)" />
+    </node>
+
+</launch>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci '/home/dev/ros_ws/ax1800_wifi_adapter/install'
+Name=Activate WIFI
+Comment=Activate WIFI
+Icon=/home/dev/ros_ws/CooperFuse_Git_new/Fast_ros_launch/icons/activate_wifi.svg

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<launch>
+
+
+    <!-- rviz -->
+    <arg name="rviz" default="false" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_" args="-d $(find smart_intersection_se)/rviz/rviz.rviz" />
+    </group>
+
+
+   <!-- axis camera 1 -->
+    <!-- <include file="$(find axis_camera)/launch/axis212.launch">
+        <arg name="camera_name" default="axis212" />
+        <arg name="hostname" default="192.168.0.212" />
+        <arg name="enable_theora" default="0" />
+        <arg name="enable_ptz" default="0" />
+        <arg name="enable_ptz_teleop" default="0" />
+        <arg name="width" default="1920" />
+        <arg name="height" default="1080" />
+        <arg name="camera" default="1" />
+    </include> -->
+
+
+   <!-- axis camera 2 -->
+   
+    <!-- <include file="$(find axis_camera)/launch/axis213.launch">
+        <arg name="camera_name" default="axis213" />
+        <arg name="hostname" default="192.168.0.213" />
+        <arg name="enable_theora" default="0" />
+        <arg name="enable_ptz" default="0" />
+        <arg name="enable_ptz_teleop" default="0" />
+        <arg name="width" default="1920" />
+        <arg name="height" default="1080" />
+        <arg name="camera" default="1" />
+    </include> -->
+
+   <!-- axis camera 4 -->
+   
+    <include file="$(find axis_camera)/launch/axis214.launch">
+        <arg name="camera_name" default="axis214" />
+        <arg name="hostname" default="192.168.0.214" />
+        <arg name="enable_theora" default="0" />
+        <arg name="enable_ptz" default="0" />
+        <arg name="enable_ptz_teleop" default="0" />
+        <arg name="width" default="1920" />
+        <arg name="height" default="1080" />
+        <arg name="camera" default="1" />
+        <arg name="use_gps_time" default="True" />
+        <arg name="gps_time_topic" default="/gps_nw/gps_time_30hz" />
+    </include>
+
+
+   <!-- axis camera 5 -->
+   
+    <include file="$(find axis_camera)/launch/axis215.launch">
+        <arg name="camera_name" default="axis215" />
+        <arg name="hostname" default="192.168.0.215" />
+        <arg name="enable_theora" default="0" />
+        <arg name="enable_ptz" default="0" />
+        <arg name="enable_ptz_teleop" default="0" />
+        <arg name="width" default="1920" />
+        <arg name="height" default="1080" />
+        <arg name="camera" default="1" />
+        <arg name="use_gps_time" default="True" />
+        <arg name="gps_time_topic" default="/gps_nw/gps_time_300hz" />
+    </include>
+
+
+    <!-- LiDAR -->
+    <!-- <include file="$(find innoviz_ros)/launch/innoviz_ros.launch">
+          <arg name="config_file_path" default="$(find innoviz_ros)/examples/lidar_configuration_files/om_ignore_blooming_config.json" /> 
+          <arg name="get_attributes_timeout" default="1000"/> 
+          <arg name="ref0" default="invz_reflection_0"/> 
+          <arg name="ref1" default="invz_reflection_1" /> 
+          <arg name="ref2" default="invz_reflection_2" /> 
+          <arg name="summation" default="invz_summation_reflection" /> 
+          <arg name="invz_log_path" default="" /> 
+          <arg name="invz_log_level" default="3" /> 
+          <arg name="ros_log_level" default="1" />
+          <arg name="recording_file_path" default="" /> 
+          <arg name="fpa" default="0.02" /> 
+          <arg name="frame_id" default="innoviz_lidar" /> 
+          <arg name="pcl_timestamp_option" default="published"/>          
+    </include> -->
+
+
+</launch>

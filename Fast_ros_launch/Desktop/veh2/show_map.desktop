@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch pcd_pub_ros launch_1pcd_on_car.launch --screen'
+Name=Show Map
+Comment=Show Map
+Icon=/home/dev/ros_ws/CooperFuse_Git_new/Fast_ros_launch/icons/map2.svg

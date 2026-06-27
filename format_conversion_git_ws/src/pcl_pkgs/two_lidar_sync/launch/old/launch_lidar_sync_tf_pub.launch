@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<launch>
+    <param name="use_sim_time" value="false" />
+    <!-- new Friday data -->
+    <!-- <param name="fix_x" value="3.8" />
+    <param name="fix_y" value="-3.4" />
+    <param name="fix_z" value="0.931" /> 
+    <param name="fix_heading" value="73.432533" />
+    <param name="fix_pitch" value="4.007970" />
+    <param name="fix_roll" value="-4.477880" /> -->
+
+    <param name="fix_x" value="3.8" />
+    <param name="fix_y" value="-3.1" />
+    <param name="fix_z" value="0.84" /> 
+    <param name="fix_heading" value="76.432533" />
+    <param name="fix_pitch" value="5.007970" />
+    <param name="fix_roll" value="-2.477880" />
+
+    <param name="veh_x" value="0" />
+    <param name="veh_y" value="0" />
+    <param name="veh_z" value="0" />
+    <param name="veh_heading" value="0" />
+    <param name="veh_pitch" value="0" />
+    <param name="veh_roll" value="0" />
+    
+    <param name="lidar1_topic" value="/syn_pc_new" />
+    <param name="lidar2_topic" value="/syn_pc_os" />
+    <param name="transformed_lidar1_topic" value="/transformed_new" />
+    <param name="transformed_lidar2_topic" value="/transformed_os" />
+
+    <arg name="input_topic1" default="/new/rslidar_points" />
+    <arg name="input_topic2" default="/rslidar_points" />
+    <arg name="output_topic1" default="/syn_pc_new" />
+    <arg name="output_topic2" default="/syn_pc_rs" />
+
+    <node pkg="two_lidar_sync" type="two_lidar_syn" name="two_lidar_syn" output="screen" >
+        <param name="input_topic1" value="$(arg input_topic1)" />
+        <param name="input_topic2" value="$(arg input_topic2)" />
+        <param name="output_topic1" value="$(arg output_topic1)" />
+        <param name="output_topic2" value="$(arg output_topic2)" />
+    </node>
+
+    <node pkg="transformation_pub" type="pcl_tf_pub" name="pcl_tf_pub" output="screen" />
+
+    <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_sync" args="-d $(find transformation_pub)/rviz/rviz_show_2transformed_lidar.rviz" />
+    </group>
+
+
+    <!-- <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_sync" args="-d $(find mapping_ucla)/rviz_cfg/mapping_ucla.rviz" />
+    </group> -->
+
+</launch>

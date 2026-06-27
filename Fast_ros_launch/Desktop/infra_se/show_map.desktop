@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch pcd_pub_ros launch_1pcd_se.launch --screen'
+Name=Show Map
+Comment=Show Map
+Icon=/home/mobility/ros_ws/Fast_ros_launch/icons/map2.svg

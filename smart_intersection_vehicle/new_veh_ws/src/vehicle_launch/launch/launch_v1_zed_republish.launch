@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- rviz -->
+    <arg name="rviz" default="false" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_" args="-d $(find vehicle_launch)/rviz/rviz.rviz" />
+    </group>
+
+    <!-- zed_gps_publisher1 -->
+    <include file="$(find zed_gps_publisher)/launch/launch_imgpub.launch">
+        <arg name="node_name" default="zed_gps_sync_node1"/>
+        <arg name="time_ref_topic" default="/veh_1/gps_can_time_hz100"/>
+        <arg name="image_topic" default="/zed2i_v1/zed_node1/left/image_rect_color/compressed"/>
+        <arg name="new_image_topic" default="/zed2i_v1_update/zed_node1/left/image_rect_color/compressed"/>
+    </include>
+
+    <!-- zed_gps_publisher2 -->
+    <include file="$(find zed_gps_publisher)/launch/launch_imgpub.launch">
+        <arg name="node_name" default="zed_gps_sync_node2"/>
+        <arg name="time_ref_topic" default="/veh_1/gps_can_time_hz100"/>
+        <arg name="image_topic" default="/zed2i_v1/zed_node2/left/image_rect_color/compressed"/>
+        <arg name="new_image_topic" default="/zed2i_v1_update/zed_node2/left/image_rect_color/compressed"/>
+    </include>
+
+    <!-- zed_gps_publisher3 -->
+    <include file="$(find zed_gps_publisher)/launch/launch_imgpub.launch">
+        <arg name="node_name" default="zed_gps_sync_node3"/>
+        <arg name="time_ref_topic" default="/veh_1/gps_can_time_hz100"/>
+        <arg name="image_topic" default="/zed2i_v1/zed_node3/left/image_rect_color/compressed"/>
+        <arg name="new_image_topic" default="/zed2i_v1_update/zed_node3/left/image_rect_color/compressed"/>
+    </include>
+
+    <!-- zed_gps_publisher4 -->
+    <include file="$(find zed_gps_publisher)/launch/launch_imgpub.launch">
+        <arg name="node_name" default="zed_gps_sync_node4"/>
+        <arg name="time_ref_topic" default="/veh_1/gps_can_time_hz100"/>
+        <arg name="image_topic" default="/zed2i_v1/zed_node4/left/image_rect_color/compressed"/>
+        <arg name="new_image_topic" default="/zed2i_v1_update/zed_node4/left/image_rect_color/compressed"/>
+    </include>
+
+</launch>

@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<launch>
+    <arg name="input_topic1" default="/transformed_rs" />    
+    <!-- <arg name="input_topic1" default="/transformed_os" /> -->
+    <arg name="input_topic2" default="/transformed_new" />
+    <arg name="output_topic" default="/pcd_transformed_synched" />
+
+
+    <node pkg="two_lidar_sync" type="two_lidar_syn_comb" name="two_lidar_syn_comb" output="screen" >
+        <param name="input_topic1" value="$(arg input_topic1)" />
+        <param name="input_topic2" value="$(arg input_topic2)" />
+        <param name="output_topic" value="$(arg output_topic)" />
+
+    </node>
+
+    <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_sync" args="-d $(find transformation_pub)/rviz/rviz_show_2transformed_lidar.rviz" />
+    </group>
+    
+    <!-- <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_sync" args="-d $(find mapping_ucla)/rviz_cfg/mapping_ucla.rviz" />
+    </group> -->
+
+</launch>

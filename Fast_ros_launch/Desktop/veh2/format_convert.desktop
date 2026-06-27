@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch fusion_project veh_conversion_all.launch --screen'
+Name=Format Conversion
+Comment=Format Conversion
+Icon=/home/dev/Documents/icons/format_conversion0.svg

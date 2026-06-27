@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch pcd_pub_ros launch_1pcd.launch --screen'
+Name=Show Map
+Comment=Show Map
+Icon=/home/zhaoliang/Documents/lincoln_car/icons/map2.svg

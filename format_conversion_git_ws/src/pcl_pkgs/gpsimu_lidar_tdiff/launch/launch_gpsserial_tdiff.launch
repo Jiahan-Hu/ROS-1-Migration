@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<launch>
+    <arg name="gps_time_topic" default= "/gps_can_time_hz10"/>
+    <arg name="lidar_topic" default= "/ouster/points"/>
+    <!-- <arg name="lidar_topic" default= "/new/rslidar_points"/> -->
+    <node pkg="gpsimu_lidar_tdiff" type="gpsserial_lidar_tdiff" name="gpsserial_lidar_tdiff" output="screen" >
+        <param name="gps_time_topic" value="$(arg gps_time_topic)" />
+        <param name="lidar_topic" value="$(arg lidar_topic)" />
+    </node>
+</launch>

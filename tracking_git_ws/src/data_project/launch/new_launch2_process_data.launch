@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim2">
+    <!-- !!!!!!the parameters for the transformation need to change !!!!! -->
+    <arg name="yaw_misalignment" default="-0.85" />
+    <arg name="lever_x" default="1.65" />
+    <arg name="lever_y" default="0" />
+    
+    <arg name="box_color1" default="34.0" />
+    <arg name="box_color2" default="139.0" />
+    <arg name="box_color3" default="34.0" />
+    <arg name="box_colora" default="0.8" />
+
+<!-- specific parameters definition ends-->
+
+<!-- general parameters definition starts-->
+
+    <!-- obj detection model -->
+    <!-- velodyne16 and velodyne64 work but 128 won't work  -->
+    <arg name="obj_detect_path1" default="/home/jiaqi/ros_ws/CooperFuse_Framework/tracking/src/multi_modalities_sensor_fusion/models/velodyne64/deploy.prototxt" />
+    <arg name="obj_detect_path2" default="/home/jiaqi/ros_ws/CooperFuse_Framework/tracking/src/multi_modalities_sensor_fusion/models/velodyne64/deploy.caffemodel" />
+    <!-- <arg name="obj_detect_path1" default="/home/jiaqi/ros_ws/CooperFuse_Framework/tracking/src/multi_modalities_sensor_fusion/models/velodyne16/deploy.prototxt" />
+    <arg name="obj_detect_path2" default="/home/jiaqi/ros_ws/CooperFuse_Framework/tracking/src/multi_modalities_sensor_fusion/models/velodyne16/deploy.caffemodel" /> -->
+<!-- general parameters definition ends-->
+
+    <!-- object detection -->
+    <include file="$(find multi_modalities_sensor_fusion)/launch/launch2_muti_modalities_sensor_fusion.launch">        
+          <arg name="network_definition_file" value="$(arg obj_detect_path1)" />
+          <arg name="pretrained_model_file"  value="$(arg obj_detect_path2)"/>
+
+          <arg name="points_src" default="/ouster_nw/points" />
+
+          <arg name="pub_detector_point_cluster" default="/detection/lidar_detector2/points_cluster" />
+          <arg name="pub_detector_objects" default="/detection/lidar_detector2/objects" />
+          <arg name="pub_points_cluster" default="/detection/lidar_detector2/points_cluster" />
+          <arg name="pub_cluster_centroids" default="/detection/lidar_detector2/cluster_centroids" />
+          <arg name="pub_cloud_clusters" default="/detection/lidar_detector2/cloud_clusters" />
+          <arg name="pc_adjustable_z" default="0.9" />
+
+    </include>
+
+
+    <!-- Launch tracking_node -->
+<!--     <node name="tracking_node" pkg="tracking_lib_execute" type="tracking_lib_execute_tracking_node" output="screen">
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/tracking_TRC.yaml"/>
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/kitti/TrackingWorker_TRC.yaml"/>
+    </node>
+ -->
+
+    <!-- tracking_lib autoware api -->
+<!--     <node pkg="api_tracking_lib_autoware" type="api_tracking_lib_autoware" name="api_tracking_lib_autoware" output="screen" /> -->
+
+    <!-- visulize the obj from tracking autoware api -->
+<!--     <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="ukf_track_visualization_01" output="screen" ns="/detection/object_tracker0"/> -->
+
+
+
+    <!-- tf publication -->
+<!--     <group>
+        <include file="$(find tf_publisher)/launch/tf_publisher.launch">
+            <arg name="yaw_misalignment_" value="$(arg yaw_misalignment)" />
+            <arg name="lever_x_" value="$(arg lever_x)" />
+            <arg name="lever_y_" value="$(arg lever_y)" />
+        </include>
+    </group> -->
+
+
+    <!-- visualize obj from carma autoware api -->
+<!--     <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="track_visualization_02" output="screen" ns="/detection/object_tracker"/> -->
+
+<!-- <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="cluster_detect_visualization_01"
+          output="screen" ns="/detection/lidar_detector2">
+    <param name="box_color1"  value="$(arg box_color1)"/>
+    <param name="box_color2"  value="$(arg box_color2)"/>
+    <param name="box_color3"  value="$(arg box_color3)"/>
+    <param name="box_colora"  value="$(arg box_colora)"/>
+</node>
+ -->
+     <!-- rviz -->
+
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_rs" args="-d $(find data_project)/rviz/show_new.rviz" />
+
+</group>
+
+</launch>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim1">
+    <!-- !!!!!!the parameters for the transformation need to change !!!!! -->
+    <arg name="yaw_misalignment" default="-0.85" />
+    <arg name="lever_x" default="1.65" />
+    <arg name="lever_y" default="0" />
+    
+    <arg name="box_color1" default="34.0" />
+    <arg name="box_color2" default="139.0" />
+    <arg name="box_color3" default="34.0" />
+    <arg name="box_colora" default="0.8" />
+
+    <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="cluster_detect_visualization_01"
+              output="screen" ns="/detection/lidar_detector2">
+        <param name="box_color1"  value="$(arg box_color1)"/>
+        <param name="box_color2"  value="$(arg box_color2)"/>
+        <param name="box_color3"  value="$(arg box_color3)"/>
+        <param name="box_colora"  value="$(arg box_colora)"/>
+    </node>
+
+    <!-- rviz -->
+
+    <!-- <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_new" args="-d $(find data_project)/rviz/show_new.rviz" /> -->
+</group>
+
+</launch>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="camera_info_publisher" type="cam_info_republisher.py" name="camera_info_republisher_node" output="screen">
+    <param name="~cam_info_ori_topic" value="/axis215/camera_info" />
+    <param name="~cam_info_pub_topic" value="/axis215_new/camera_info" />
+    <!-- <param name="~cam_info_ori_topic" value="/hardware_interface/camera_sl/camera_new/camera_info" /> -->
+    <!-- <param name="~cam_info_ori_topic" value="/hardware_interface/camera_sl/camera_new_mod/camera_info" /> -->
+    <!-- <param name="~cam_info_pub_topic" value="/hardware_interface/camera_sr/camera_new/camera_info" /> -->
+  </node>
+</launch>

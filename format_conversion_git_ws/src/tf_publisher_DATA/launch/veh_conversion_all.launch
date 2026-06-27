@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim1">  
+
+	<arg name="lidar_topic" default="/veh2/rslidar_points"/>
+	<arg name="header_topic" default="/rs_header"/>
+	<node pkg="pcl_header_pub" type="pcl_header_pub" name="pcl_header_pub_01" output="screen">
+	    <param name="lidar_topic" value="$(arg lidar_topic)"/>
+	    <param name="header_topic" value="$(arg header_topic)"/>
+	</node>
+
+	<!-- convert /fusion_pose into /fusion_pose_gps -->
+	<node name="loc_gps_time_node" pkg="loc_gps_time" type="sync_fuse_pose_gps_time">
+	    <param name="fusion_pose_topic" type="string" value="/fusion_pose"/>
+	    <param name="gps_time_topic" type="string" value="/veh_2/gps_can_time_hz100"/>
+	    <param name="fusion_pose_gps_topic" type="string" value="/fusion_pose_gps"/>
+	 </node>
+
+	<!-- convert fusion_pose_gps into tf with gps time stamp  -->
+	<node name="veh_tf_publisher_node" pkg="tf_publisher" type="veh_tf_publisher" output="screen">
+		<param name="map_frame_id" value="/map"/>
+		<param name="child_frame_id" value="/veh2_rslidar"/>
+		<param name="ndt_pose_topic" value="/fusion_pose_gps"/>
+	</node>
+
+	<!-- convert tracking topic from local frame to global frame  -->
+    <node name="bbx_tf_pub_node_01" pkg="ros_transform_utils" type="bbx_tf_pub">
+        <param name="bbx_topic" type="string" value="/tracking/objects_bbx_score_label" />
+        <param name="transformed_bbx_topic" type="string" value="/tracking/transformed_objects_box_score_label" />
+    </node>
+
+    <node name="bbx_tf_pub_node_02" pkg="ros_transform_utils" type="bbx_tf_pub">
+        <param name="bbx_topic" type="string" value="/tracking/det_box_score_label" />
+        <param name="transformed_bbx_topic" type="string" value="/tracking/transformed_det_box_score_label" />
+    </node>
+
+    <node name="header_bbx_tf_pub_node" pkg="ros_transform_utils" type="header_bbx_tf_pub">
+        <param name="fusion_bbx_topic" type="string" value="/tracking/objects_header_bbx_score_label" />
+         <param name="transformed_bbx_topic" type="string" value="/tracking/transformed_objects_header_box_score_label" />
+    </node>
+
+    <!-- tf publish for veh -->
+    <node name="veh_tf_publisher_node" pkg="tf_publisher" type="veh_tf_publisher" output="screen">
+        <param name="map_frame_id" value="/map"/>
+        <param name="child_frame_id" value="/veh2_rslidar"/>
+        <param name="ndt_pose_topic" value="/fusion_pose_gps"/>
+    </node>
+
+    <!-- convert cooperfuse result from MarkerArray into MarkerArrayHeader -->
+    <node pkg="bbx_sync" type="bbx2headerbbxv2" name="marker_converter_node" output="screen">
+        <param name="input_topic" value="/fusion/bbx" />
+        <param name="output_topic" value="/fusion/header_bbx" />
+<!--         <param name="input_topic" value="/tracking/transformed_objects_box_score_label" />
+        <param name="output_topic" value="/tracking/transformed_header_objects_box_score_label" /> -->
+    </node>
+
+    <!-- convert fusion_pose_gps into a ego marker for visulization  -->
+    <node name="ego_vis_node" type="ego_vis" pkg="synced_visualization">
+  		<param name="fusion_pose" value="/fusion_pose_gps"/>
+  		<param name="visualization_marker" value="/ego_marker"/>
+  	</node>
+
+  	<!-- <node name="bbx_pcl_sync_node" type="bbx_pcl_sync" pkg="synced_visualization" output="screen"> -->
+    	<!-- <param name="input_topic_bbx" type="string" value="/fusion/header_bbx" /> -->
+<!--     	<param name="input_topic_bbx" type="string" value="/tracking/transformed_header_objects_box_score_label"/>
+    	<param name="input_topic_pc" type="string" value="/pc_subset_gps" />
+    	<param name="output_topic_vis_bbx" type="string" value="/vis/fusion_bbx" />
+    	<param name="output_topic_vis_pc" type="string" value="/vis/pc_subset_gps" />
+    </node> -->
+
+    <node name="sync_header_bbx_tf_pub_node" pkg="ros_transform_utils" type="sync_header_bbx_tf_pub">
+        <param name="fusion_bbx_topic" type="string" value="/tracking/objects_header_bbx_score_label" />
+         <param name="transformed_bbx_topic" type="string" value="/tracking/transformed_objects_header_bbx_score_label_sync" />
+    </node>
+
+</group>
+
+</launch>

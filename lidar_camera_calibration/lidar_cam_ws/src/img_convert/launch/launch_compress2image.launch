@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="compressed_topic" default="/zed2i_v2/zed_node3/left_update_sync/image_rect_color/compressed"/>
+  <arg name="image_topic" default="/zed2i_v2/zed_node3/left_update_sync/image_rect_color"/>
+  <node pkg="img_convert" name="compress2image" type="compress2image" output="screen" >
+    <param name="compressed_topic" value="$(arg compressed_topic)"/>
+    <param name="image_topic" value="$(arg image_topic)"/>
+  </node>
+</launch>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim_veh">
+  <node name="veh_tf_publisher_node" pkg="tf_publisher" type="veh_tf_publisher" output="screen">
+    <param name="map_frame_id" value="/map"/>
+    <param name="child_frame_id" value="/veh2_rslidar"/>
+    <param name="ndt_pose_topic" value="/fusion_pose_gps"/>
+  </node>
+</group>
+</launch>

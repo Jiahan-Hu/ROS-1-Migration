@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch line_convert veh_convert_pc.launch --screen'
+Name=PC Subset Conversion
+Comment=PC Subset Conversion
+Icon=/home/dev/ros_ws/CooperFuse_Git_new/Fast_ros_launch/icons/format_conversion2.svg
+Name[en_US]=pc_subset.desktop

@@ -1,0 +1,21 @@
+[submodule "rs_ray_convert"]
+	path = rs_ray_convert
+	url = https://github.com/zhz03/rs_ray_convert.git
+[submodule "pcl_time_change"]
+	path = pcl_time_change
+	url = https://github.com/zhz03/pcl_time_change.git
+[submodule "gpsimu_lidar_tdiff"]
+	path = gpsimu_lidar_tdiff
+	url = https://github.com/zhz03/gpsimu_lidar_tdiff.git
+[submodule "pcl_header_pub"]
+	path = pcl_header_pub
+	url = https://github.com/zhz03/pcl_header_pub.git
+[submodule "ros_transform_utils"]
+	path = ros_transform_utils
+	url = https://github.com/zhz03/ros_transform_utils.git
+[submodule "two_lidar_sync"]
+	path = two_lidar_sync
+	url = https://github.com/zhz03/two_lidar_sync.git
+[submodule "pcd_pub_ros"]
+	path = pcd_pub_ros
+	url = https://github.com/zhz03/pcd_pub_ros.git

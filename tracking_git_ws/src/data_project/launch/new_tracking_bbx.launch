@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim_fuse">
+
+<!--     <include file="$(find bbx2seg_pcl)/launch/bbx2seg_pcl.launch">        
+    </include> -->
+
+      <node name="bbx2seg_pcl_v3_node" pkg="bbx2seg_pcl" type="bbx2seg_pcl_v4" output="screen">
+        <!-- Load the parameter file -->
+        <!-- <rosparam command="load" file="$(find bbx2seg_pcl)/config/bbx2segpcl.yaml"/> -->
+        <rosparam command="load" file="$(find bbx2seg_pcl)/config/bbx2segpcl_bev.yaml"/>
+
+      </node>
+  
+    <!-- Launch tracking_node -->
+    <node name="tracking_node_bbx" pkg="tracking_lib_execute" type="tracking_lib_execute_tracking_node_bbx_2" output="screen">
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/new_tracking_TRC_bbx.yaml"/>
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/kitti/TrackingWorker_TRC_bbx.yaml"/>
+    </node>
+
+    <!-- tracking_lib autoware api -->
+    <!--     <node pkg="api_tracking_lib_autoware" type="api_tracking_lib_autoware" name="api_tracking_lib_autoware" output="screen" /> -->
+<!--     <node pkg="api_tracking_lib_autoware" type="api_tracking_lib_autoware_sim" name="api_tracking_lib_autoware_02" output="screen">
+
+        <param name="detection_object_topic" value="$(arg detection_object_topic)" />
+        <param name="segment_cloud_topic" value="$(arg segment_cloud_topic)" />
+
+    </node> -->
+
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_rs" args="-d $(find data_project)/rviz/show_new.rviz" />
+
+</group>
+
+</launch>

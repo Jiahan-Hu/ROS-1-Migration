@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<launch>
+    <!-- Define the network_delay_topic as an argument -->
+    <arg name="network_delay_topic" default="/network_delay" />
+    <!-- Define the target_host as an argument -->
+    <arg name="target_host" default="192.168.1.114" />
+
+    <!-- Launch the network latency node -->
+    <node pkg="ros_network_analyzer" type="latency_pub.py" name="network_latency_node2" output="screen">
+        <!-- Pass the target_host argument as a private parameter -->
+        <param name="target_host"  value="$(arg target_host)"/>
+        <!-- Pass the network_delay_topic argument as a private parameter -->
+        <param name="box_color1"  value="$(arg network_delay_topic)"/>
+    </node>
+</launch>
+

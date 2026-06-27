@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<launch>
+    <arg name="lidar_topic" default="/ouster_nw/points"/>
+    <arg name="header_topic" default="/os_header"/>
+    <node pkg="pcl_header_pub" type="pcl_header_pub" name="pcl_header_pub_01" output="screen">
+        <param name="lidar_topic" value="$(arg lidar_topic)"/>
+        <param name="header_topic" value="$(arg header_topic)"/>
+    </node>
+
+</launch>

@@ -1,0 +1,16 @@
+v2xfusion: {
+  # sub_ego_bbx: "/tracking/transformed_det_box_score_label",
+  # sub_agent1_bbx: "/tracking2/transformed_det_box_score_label",
+
+  # new 
+  # sub_ego_bbx: "/tracking/transformed_objects_box_score_label",
+  # sub_agent1_bbx: "/tracking2/transformed_objects_box_score_label",
+
+  # sync
+  sub_ego_bbx: "/tracking/transformed_objects_bbx_score_label_sync",
+  sub_agent1_bbx: "/tracking2/transformed_objects_box_score_label_sync",
+  
+  pub_fusion_bbx: "/fusion/bbx",
+  
+  pub_same_pose: "/fusion/same_position",
+}

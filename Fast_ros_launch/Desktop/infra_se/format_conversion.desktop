@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch tf_publisher infra_conversion_all_se.launch --screen'
+Name=Format Conversion
+Comment=Format Conversion
+Icon=/home/mobility/ros_ws/Fast_ros_launch/icons/format_conversion1.svg

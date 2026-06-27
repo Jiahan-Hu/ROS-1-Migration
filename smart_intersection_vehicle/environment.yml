@@ -1,0 +1,13 @@
+name: calib_gui
+channels:
+  - defaults
+dependencies:
+  - pip==21.1.2
+  - python==3.7.11
+  - pyqt
+  - pip:
+    - empy 
+    - catkin_pkg
+    - pyyaml
+    - rospkg
+    - rospy 

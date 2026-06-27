@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<launch>
+<group ns="sim1">
+    <node name="bbx_tf_pub_node_01" pkg="ros_transform_utils" type="bbx_tf_pub">
+        <param name="bbx_topic" type="string" value="/tracking/objects_fusion_box_score" />
+        <param name="transformed_bbx_topic" type="string" value="/tracking/transformed_objects_fusion_box_score" />
+    </node>
+
+</group>
+</launch>

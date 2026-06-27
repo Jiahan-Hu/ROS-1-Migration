@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<launch>
+    <arg name="port" default="/dev/ttyUSB0" />
+    <arg name="baud" default="9600" />
+    <arg name="ori_gps_topic" default="gps_time_ori" />
+    <arg name="gps_publish_topic" default="gps_time_10hz" />
+    <arg name="gps_time_hz" default="10" />
+
+    <node pkg="nmea_gps_driver" type="ros_pyserial_get_gps.py" name="ros_pyserial_get_gps" output="screen">
+        <param name="port" value="$(arg port)" />
+        <param name="baud" value="$(arg baud)" />
+        <param name="publish_topic" value="$(arg ori_gps_topic)" />
+    </node>
+
+    <node pkg="nmea_gps_driver" type="gps_time_pub.py" name="gps_time_pub" output="screen">
+        <param name="ori_topic" value="$(arg ori_gps_topic)" />
+        <param name="publish_topic" value="$(arg gps_publish_topic)" />
+        <param name="gps_time_hz" value="$(arg gps_time_hz)" />
+    </node>
+</launch>

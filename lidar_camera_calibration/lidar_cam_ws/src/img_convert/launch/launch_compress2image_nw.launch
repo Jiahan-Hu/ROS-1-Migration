@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <arg name="compressed_topic" default="/axis215/image_raw/compressed"/>
+  <arg name="image_topic" default="/axis215_new/image_raw"/>
+
+  <node pkg="img_convert" name="compress2image" type="compress2image" output="screen" >
+    <param name="compressed_topic" value="$(arg compressed_topic)"/>
+    <param name="image_topic" value="$(arg image_topic)"/>
+  </node>
+</launch>
+

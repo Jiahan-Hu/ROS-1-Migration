@@ -1,0 +1,19 @@
+[submodule "lidar_cam_ws/src/lidar_camera_calibrator"]
+	path = lidar_cam_ws/src/lidar_camera_calibrator
+	url = https://github.com/xiaxin2000/lidar_camera_calibrator.git
+[submodule "lidar_cam_ws/src/lidar_camera_calibration_gui"]
+	path = lidar_cam_ws/src/lidar_camera_calibration_gui
+	url = https://github.com/xiaxin2000/lidar_camera_calibration_gui.git
+[submodule "lidar_cam_ws/src/lidar_camera_sync"]
+	path = lidar_cam_ws/src/lidar_camera_sync
+	url = https://github.com/zhz03/lidar_camera_sync.git
+
+[submodule "lidar_cam_ws/src/img_convert"]
+	path = lidar_cam_ws/src/img_convert
+	url = https://github.com/zhz03/img_convert.git
+[submodule "lidar_cam_ws/src/pcl_time_change"]
+	path = lidar_cam_ws/src/pcl_time_change
+	url = https://github.com/zhz03/pcl_time_change.git
+[submodule "lidar_cam_ws/src/camera_info_publisher"]
+	path = lidar_cam_ws/src/camera_info_publisher
+	url = https://github.com/zhz03/camera_info_publisher.git

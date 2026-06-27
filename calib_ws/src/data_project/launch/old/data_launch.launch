@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- !!!!!!the parameters for the transformation need to change !!!!! -->
+    <arg name="yaw_misalignment_" default="-1" />
+    <arg name="lever_x_" default="1.65" />
+    <arg name="lever_y_" default="-0.0" />
+<!-- specific parameters definition ends-->
+
+    <!-- launch software -->
+    <group>
+        <include file="$(find data_project)/launch/process_data.launch">
+            <arg name="yaw_misalignment" value="$(arg yaw_misalignment_)" />
+            <arg name="lever_x" value="$(arg lever_x_)" />
+            <arg name="lever_y" value="$(arg lever_y_)" />
+        </include>
+    </group>
+
+</launch> 

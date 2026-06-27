@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci '/home/mobility/ros_ws/Fast_ros_launch/shell/cooperfuse.sh'
+Name=Cooperfuse
+Comment=Cooperfuse
+Icon=/home/mobility/ros_ws/Fast_ros_launch/icons/fusion.svg
+Name[en_US]=cooperfuse.desktop

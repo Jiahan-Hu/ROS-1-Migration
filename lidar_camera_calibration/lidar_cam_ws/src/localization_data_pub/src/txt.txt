@@ -1,0 +1,12 @@
+// Number of ticks per wheel revolution. We won't use this in this code.
+const int TICKS_PER_REVOLUTION = 420;
+ 
+// Wheel radius in meters
+const double WHEEL_RADIUS = 0.254/2;
+ 
+// Distance from center of the left tire to the center of the right tire in m
+const double WHEEL_BASE = 0.625; 
+ 
+// Number of ticks a wheel makes moving a linear distance of 1 meter
+// This value was measured manually.
+const double TICKS_PER_METER = 526; // Originally 2880

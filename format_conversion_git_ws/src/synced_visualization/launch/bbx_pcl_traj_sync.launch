@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+  <node name="bbx_pcl_traj_sync node" type="bbx_pcl_traj_sync" pkg="synced_visualization" output="screen">
+    <param name="input_topic_bbx" type="string" value="/detected_bbx" />
+    <param name="input_topic_pc" type="string" value="/pc_subset" />
+    <param name="input_topic_trajectory" value="/tracking/trajectory" />
+    <param name="output_topic_vis_bbx" type="string" value="/vis/detected_bbx" />
+    <param name="output_topic_vis_pc" type="string" value="/vis/pc_subset" />
+    <param name="output_topic_vis_trajectory" value="/vis/tracjectory" />
+  </node>
+</launch>

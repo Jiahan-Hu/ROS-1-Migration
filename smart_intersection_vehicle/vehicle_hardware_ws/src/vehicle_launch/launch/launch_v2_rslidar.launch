@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- rviz -->
+    <arg name="rviz" default="false" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_" args="-d $(find vehicle_launch)/rviz/rviz.rviz" />
+    </group>
+
+    <!-- rslidar -->
+    <include file="$(find rslidar_sdk)/launch/start.launch">
+        <arg name="config_path" default="/config/config_v2.yaml" />
+    </include>
+    
+</launch>

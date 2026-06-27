@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<launch>
+  <arg name="pcd_file1" default="/home/zhaoliang/zzl/zhz03_github/hdl_localization_ws/src/hdl_localization/data/ucla_merged.pcd" />
+  <arg name="scale1" default="0.1" />
+  <arg name="frame_id1" default="/map" />
+  <arg name="cloud_pcd1" default="/hd_map" />
+
+  <!-- Launch the first instance of my_pcd_to_pointcloud -->
+  <node pkg="pcl_ros" type="pcd_to_pointcloud" name="pcd_to_pointcloud_1" output="screen" args="cloud_pcd:=$(arg cloud_pcd1)">
+    <param name="file_name" value="$(arg pcd_file1)" />
+    <param name="interval" value="$(arg scale1)" />
+    <param name="frame_id" value="$(arg frame_id1)" />
+    <!-- <param name="cloud_pcd" value="/velodyne_1" /> -->
+  </node>
+
+</launch>

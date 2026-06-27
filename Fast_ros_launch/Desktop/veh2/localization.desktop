@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch lidar_localizer ndt_matching.launch --screen'
+Name=Localization
+Comment=Localization
+Icon=/home/dev/Documents/icons/localization3.png

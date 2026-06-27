@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<launch>
+  <!-- Start the ROS package -->
+  <node pkg="bbx2seg_pcl" name="bounding_box_to_segmented_clouds_node" type="bbx2pcl"  output="screen">
+    <!-- Add any required ROS parameters -->
+    <param name="subscribe_topic" value="/tracking/transformed_objects_box_score" />
+    <param name="output_topic" value="/segment/clouds_segmented" />
+    <param name="pc2_topic" value="/segment/point_cloud" />
+  </node>
+</launch>

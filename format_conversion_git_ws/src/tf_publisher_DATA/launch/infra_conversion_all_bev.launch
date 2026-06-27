@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim2">
+
+    <arg name="lidar_topic" default="/ouster_nw/points"/>
+    <arg name="header_topic" default="/os_header"/>
+
+    <arg name="point_cloud_topic" default="/ouster_nw/points" />
+    <arg name="map_frame" default="map" />
+    <arg name="child_frame" default="os_sensor" />
+    <arg name="fix_x" default="29.252044126767487" />
+    <arg name="fix_y" default="-157.99108715588525" />
+    <arg name="fix_z" default="2.504110691351501" />
+    <arg name="fix_heading" default="-0.04571448047729036" />
+    <arg name="fix_pitch" default="-0.05262715935993412" />
+    <arg name="fix_roll" default="-0.02814657310165272" />
+
+    <!-- publish header for ouster_nw pointcloud  -->
+    <node pkg="pcl_header_pub" type="pcl_header_pub" name="pcl_header_pub_01" output="screen">
+        <param name="lidar_topic" value="$(arg lidar_topic)"/>
+        <param name="header_topic" value="$(arg header_topic)"/>
+    </node>
+
+    <!-- tf publish for infra  -->
+    <node pkg="tf_publisher" type="tf_publisher_simple" name="tf_publisher_simple_02" output="screen">
+        <param name="point_cloud_topic" value="$(arg point_cloud_topic)" />
+        <param name="map_frame" value="$(arg map_frame)" />
+        <param name="child_frame" value="$(arg child_frame)" />
+        <param name="fix_x" value="$(arg fix_x)" />
+        <param name="fix_y" value="$(arg fix_y)" />
+        <param name="fix_z" value="$(arg fix_z)" />
+        <param name="fix_yaw" value="$(arg fix_heading)" />
+        <param name="fix_pitch" value="$(arg fix_pitch)" />
+        <param name="fix_roll" value="$(arg fix_roll)" />
+    </node>
+
+
+    <!-- <node name="bbx_tf_pub_node_02" pkg="ros_transform_utils" type="bbx_tf_pub">
+        <param name="bbx_topic" type="string" value="/tracking2/objects_fusion_box_score" />
+        <param name="transformed_bbx_topic" type="string" value="/tracking2/transformed_objects_fusion_box_score" />
+    </node> -->
+
+</group>
+
+</launch>

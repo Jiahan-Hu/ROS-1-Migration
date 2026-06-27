@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="gui2pryxyz_all_node" pkg="lidar_camera_calibration_gui" type="gui2pryxyz_all.py" output="screen" />
+
+</launch>

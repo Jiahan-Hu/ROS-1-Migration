@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  <node name="get_config_node" pkg="cooperfuse_ros" type="test_topic_exit.py" output="screen">
+    <!-- Load the parameter file -->
+    <rosparam command="load" file="$(find cooperfuse_ros)/config/fusion.yaml"/>
+
+  </node>
+</launch>

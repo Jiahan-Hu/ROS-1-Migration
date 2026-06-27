@@ -1,0 +1,31 @@
+tracking: {
+  # local_frame_id: "veh1_rslidar",
+  local_frame_id: "rslidar",
+  global_frame_id: "map",
+  # Query Ros TF timeout in ms. ros::Duration time.
+  # type: int
+  # default: 10
+  tf_timeout_ms: 1,
+
+  # segmented point clouds directly from segment node # previous: /segment/clouds_segmented /detection/lidar_detector/points_cluster
+  sub_pcs_segmented_topic: "/seg2/segment_msgs",
+  sub_pcs_queue_size: 1,
+
+  # intermediate segments
+  pub_segments_coarse_topic: "/tracking/segments_coarse",
+  pub_segments_predict_topic: "/tracking/segments_predict",
+  pub_segments_topic: "/tracking/segments",
+  # output of tracking system
+  pub_output_objects_topic: "/tracking/tracking_objects",
+  pub_output_objects_local_topic: "/tracking/tracking_objects_local", 
+  pub_output_trajectories_topic: "/tracking/fixed_trajectories",
+  # intermediate visualization
+  pub_tracking_objects_topic: "/tracking/objects", # original
+  pub_tracking_objects_box_topic: "/tracking/objects_box",  #zzl 
+  pub_tracking_objects_box_score_topic: "/tracking/objects_box_score", # zzl
+  pub_tracking_objects_cloud_topic: "/tracking/clouds",
+  pub_tracking_objects_velocity_topic: "/tracking/objects_vel",
+  pub_tracking_objects_trajectory_topic: "/tracking/trajectory",
+  # visualization color topic 
+  objects_box_score_color_topic: "BLUE", # "GREEN" or "RED" or "BLUE" or "YELLOW" or "CYAN"
+}

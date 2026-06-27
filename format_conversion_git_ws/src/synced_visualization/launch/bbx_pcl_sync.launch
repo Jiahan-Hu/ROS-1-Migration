@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<launch>
+  <node name="bbx_pcl_sync_node" type="bbx_pcl_sync" pkg="synced_visualization" output="screen">
+    <param name="input_topic_bbx" type="string" value="/fusion/header_bbx_new" />
+    <param name="input_topic_pc" type="string" value="/ouster_se/pc_subset" />
+    <param name="output_topic_vis_bbx" type="string" value="/vis/detected_bbx" />
+    <param name="output_topic_vis_pc" type="string" value="/vis/pc_subset" />
+  </node>
+</launch>

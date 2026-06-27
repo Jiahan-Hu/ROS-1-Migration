@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<launch>
+  <!-- Start the ROS package -->
+  <node pkg="bbx2seg_pcl" name="vis_seg_cloud_node" type="vis_seg_cloud"  output="screen">
+    <!-- Add any required ROS parameters -->
+    <param name="input_topic" value="/segment/clouds_segmented" />
+    <param name="output_topic" value="/fake/point_cloud" />
+  </node>
+</launch>

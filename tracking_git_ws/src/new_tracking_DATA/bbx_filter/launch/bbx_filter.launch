@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Set the parameter 'k' -->
+  <param name="k" type="int" value="3"/>
+
+  <!-- Set the names of the subscribed and published topics -->
+  <param name="subscribe_topic" type="str" value="/tracking/transformed_objects_fusion_box_score"/>
+  <param name="publish_topic" type="str" value="/tracking/init/objects_fusion_box_score"/>
+
+  <!-- Launch the marker_initializer node -->
+  <node name="marker_initializer_node" pkg="bbx_filter" type="bbx_filter_node" output="screen"/>
+</launch>
+

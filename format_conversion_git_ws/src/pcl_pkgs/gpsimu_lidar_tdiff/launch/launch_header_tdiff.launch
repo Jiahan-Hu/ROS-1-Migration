@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="header_tdiff_node" pkg="gpsimu_lidar_tdiff" type="header_tdiff" output="screen">
+    <param name="ego_topic1" type="string" value="/rs_header" />
+    <param name="topic2" type="string" value="/os_header" />
+    <param name="time_difference_topic" type="string" value="time_difference" />
+  </node>
+</launch>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="node_name" default="zed_gps_sync_node1"/>
+  <arg name="time_ref_topic" default="/veh_2/gps_can_time_hz10"/>
+  <arg name="image_topic" default="/zed2i_v2_1/zed_node1/left/image_rect_color/compressed"/>
+  <arg name="new_image_topic" default="/zed2i_v2_1_update/zed_node1/left/image_rect_color/compressed"/>
+
+  <node pkg="zed_gps_publisher" type="zed_gps_sync" name="$(arg node_name)">
+    <param name="time_ref_topic" value="$(arg time_ref_topic)"/>
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="new_image_topic" value="$(arg new_image_topic)"/>
+  </node>
+</launch>

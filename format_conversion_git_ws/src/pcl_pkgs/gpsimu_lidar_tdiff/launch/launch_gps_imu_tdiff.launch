@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<launch>
+    <arg name="can_topic" default= "/can_tx"/>
+    <arg name="imu_topic" default= "/gps/imu"/>
+    <arg name="lidar_topic" default= "/rslidar_points"/>
+    <node pkg="gpsimu_lidar_tdiff" type="gps_imu_lidar_tdiff" name="gps_imu_lidar_tdiff_node" output="screen" >
+        <param name="can_topic" value="$(arg can_topic)" />
+        <param name="imu_topic" value="$(arg imu_topic)" />
+        <param name="lidar_topic" value="$(arg lidar_topic)" />
+    </node>
+</launch>

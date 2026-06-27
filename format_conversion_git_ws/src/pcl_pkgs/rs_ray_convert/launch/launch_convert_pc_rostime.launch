@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<launch>
+    <!-- <arg name="input_topic" default="/new/rslidar_points" />
+    <arg name="output_topic" default="/new/rslidar_points_subset" /> -->
+    <arg name="input_topic" default="/new/rslidar_points" />
+    <arg name="output_topic" default="/pc_subset" />
+    <node pkg="line_convert" type="convert_pc_rostime" name="convert_pc_rostime" output="screen">
+        <param name="input_topic" value="$(arg input_topic)" />
+        <param name="output_topic" value="$(arg output_topic)" />
+    </node>
+
+</launch>

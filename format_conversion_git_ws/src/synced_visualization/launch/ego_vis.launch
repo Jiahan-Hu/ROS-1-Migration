@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+  <!-- Set fusion_pose and visualization_marker as rosparams -->
+  <param name="fusion_pose" value="/fusion_pose_gps"/>
+  <param name="visualization_marker" value="/ego_marker"/>
+
+  <!-- Start your node -->
+  <node name="ego_vis_node" type="ego_vis" pkg="synced_visualization">
+  </node>
+</launch>
+

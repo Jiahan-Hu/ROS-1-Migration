@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim2">
+
+    <!-- This is the combination of:
+        roslaunch bbx_sync two_header_bbx_sync_repub.launch
+        roslaunch bbx_sync bbx_header_convert_v2.launch
+        roslaunch bbx_filter bbx_filter_veh_final.launch
+        roslaunch synced_visualization bbx_pcl_sync.launch -->
+
+    <!-- =============================== parameters starts =============================== -->
+    <arg name="input_topic1" default="/tracking/transformed_objects_header_box_score_label" />
+    <arg name="input_topic2" default="/tracking2/transformed_objects_header_box_score_label" />
+    <arg name="output_topic1" default="/tracking/transformed_objects_box_score_label_sync" />
+    <arg name="output_topic2" default="/tracking2/transformed_objects_box_score_label_sync" />
+
+    <!-- for final test -->
+    <arg name="k_arg" default="3"/>
+    <arg name="subscribe_topic_arg" default="/fusion/bbx"/>
+    <arg name="publish_topic_arg" default="/fusion/filter/bbx"/>
+    <!-- =============================== parameters ends =============================== -->
+
+
+    <!-- convert the swarm topics to topics that can be processed by CooperFuse  -->
+    <node pkg="bbx_sync" type="two_header_bbx_sync_repub" name="two_header_bbx_sync_repub_node" output="screen" >
+        <param name="input_topic1" value="$(arg input_topic1)" />
+        <param name="input_topic2" value="$(arg input_topic2)" />
+        <param name="output_topic1" value="$(arg output_topic1)" />
+        <param name="output_topic2" value="$(arg output_topic2)" />
+    </node>
+
+    <!-- Node to convert MarkerArray to MarkerArrayHeader -->
+    <node pkg="bbx_sync" type="bbx2headerbbxv2" name="marker_converter_node_v2" output="screen">
+        <param name="input_topic" value="/fusion/bbx" />
+        <param name="output_topic" value="/fusion/header_bbx_new" />
+    </node>
+
+    <node name="marker_initializer_node1" pkg="bbx_filter" type="bbx_filter_node" output="screen">
+        <!-- Pass arguments as parameters -->
+        <param name="k" type="int" value="$(arg k_arg)"/>
+        <param name="subscribe_topic" type="str" value="$(arg subscribe_topic_arg)"/>
+        <param name="publish_topic" type="str" value="$(arg publish_topic_arg)"/>
+    </node>
+
+    <node name="bbx_pcl_sync_node" type="bbx_pcl_sync" pkg="synced_visualization" output="screen">
+        <param name="input_topic_bbx" type="string" value="/fusion/header_bbx_new" />
+        <param name="input_topic_pc" type="string" value="/ouster_nw/points" />
+        <param name="output_topic_vis_bbx" type="string" value="/vis/detected_bbx" />
+        <param name="output_topic_vis_pc" type="string" value="/vis/points" />
+    </node>
+
+</group>
+
+</launch>

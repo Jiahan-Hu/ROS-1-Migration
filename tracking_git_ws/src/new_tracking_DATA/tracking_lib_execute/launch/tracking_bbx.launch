@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+    <!-- Launch tracking_node -->
+    <node name="tracking_node" pkg="tracking_lib" type="tracking_lib_tracking_node_bbx" output="screen">
+        <rosparam command="load" file="$(find tracking_lib)/config/tracking_bbx.yaml"/>
+        <rosparam command="load" file="$(find tracking_lib)/config/kitti/TrackingWorker_TRC.yaml"/>
+    </node>
+
+</launch>

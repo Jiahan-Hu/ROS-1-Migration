@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  <!-- <node name="test_node" pkg="cooperfuse_ros" type="test_subscribe_topics.py" output="screen"> -->
+  <node name="test_node" pkg="cooperfuse_ros" type="tag2_subscribe_topics.py" output="screen">
+    <!-- Load the parameter file -->
+    <rosparam command="load" file="$(find cooperfuse_ros)/config/fusion_tag2.yaml"/>
+
+  </node>
+</launch>

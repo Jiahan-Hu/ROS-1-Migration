@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- rviz -->
+    <arg name="rviz" default="false" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_" args="-d $(find vehicle_launch)/rviz/rviz.rviz" />
+    </group>
+
+    <!-- zed_gps_publisher1 -->
+    <include file="$(find zed_gps_publisher)/launch/launch_imgpub_infra.launch">
+        <arg name="node_name" default="infra_gps_sync_node1"/>
+        <arg name="time_ref_topic" default="/gps_nw/gps_time_30hz"/>
+        <arg name="image_topic" default="/axis214/image_raw/compressed"/>
+        <arg name="new_image_topic" default="/axis214_update/image_raw/compressed"/>
+    </include>
+
+    <include file="$(find zed_gps_publisher)/launch/launch_imgpub_infra.launch">
+        <arg name="node_name" default="infra_gps_sync_node2"/>
+        <arg name="time_ref_topic" default="/gps_nw/gps_time_30hz"/>
+        <arg name="image_topic" default="/axis215/image_raw/compressed"/>
+        <arg name="new_image_topic" default="/axis215_update/image_raw/compressed"/>
+    </include>
+
+</launch>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="loc_gps_time_node" pkg="loc_gps_time" type="sync_fuse_pose_gps_time">
+    <param name="fusion_pose_topic" type="string" value="/fusion_pose"/>
+    <param name="gps_time_topic" type="string" value="/gps_can_time_topic"/>
+    <param name="fusion_pose_gps_topic" type="string" value="/fusion_pose_gps"/>
+  </node>
+</launch>
+

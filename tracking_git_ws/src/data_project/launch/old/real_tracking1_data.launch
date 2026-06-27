@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim1">
+    <arg name="point_cloud_topic" default="/detection/lidar_detector/points_cluster" />
+    <arg name="map_frame" default="map" />
+    <arg name="child_frame" default="veh1_rslidar" />
+    <arg name="fix_x" default="0.0" />
+    <arg name="fix_y" default="0.0" />
+    <arg name="fix_z" default="0.0" />
+    <arg name="fix_heading" default="0.0" />
+    <arg name="fix_pitch" default="0.0" />
+    <arg name="fix_roll" default="0.0" />
+
+    <arg name="detection_object_topic" default="/detection/lidar_detector/objects"/>
+    <arg name="segment_cloud_topic" default="/segment/clouds_segmented"/>
+    <arg name="tracking_topic" default="/tracking/tracking_objects_local"/>
+    <arg name="tracking_objects_topic" default="/detection/object_tracker/objects"/>
+    
+    <arg name="box_color1" default="34.0" />
+    <arg name="box_color2" default="139.0" />
+    <arg name="box_color3" default="34.0" />
+    <arg name="box_colora" default="0.8" />
+
+    <!-- Launch tracking_node -->
+    <node name="tracking_node_01" pkg="tracking_lib_execute" type="tracking_lib_execute_tracking_node" output="screen">
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/tracking_TRC.yaml"/>
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/kitti/TrackingWorker_TRC.yaml"/>
+    </node>
+
+    <!-- tracking_lib autoware api -->
+    <!--     <node pkg="api_tracking_lib_autoware" type="api_tracking_lib_autoware" name="api_tracking_lib_autoware" output="screen" /> -->
+    <node pkg="api_tracking_lib_autoware" type="api_tracking_lib_autoware" name="api_tracking_lib_autoware_01" output="screen">
+
+        <param name="detection_object_topic" value="$(arg detection_object_topic)" />
+        <param name="segment_cloud_topic" value="$(arg segment_cloud_topic)" />
+        <param name="tracking_topic" value="$(arg tracking_topic)" />
+        <param name="tracking_objects_topic" value="$(arg tracking_objects_topic)" />
+
+    </node>
+
+    <!-- visulize the obj from tracking autoware api -->
+<!--     <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="ukf_track_visualization_01" output="screen" ns="/detection/object_tracker0"/> -->
+
+
+
+    <!-- tf publication -->
+<!--     <node pkg="tf_publisher" type="tf_publisher_simple" name="tf_publisher_simple_01" output="screen">
+        <param name="point_cloud_topic" value="$(arg point_cloud_topic)" />
+        <param name="map_frame" value="$(arg map_frame)" />
+        <param name="child_frame" value="$(arg child_frame)" />
+        <param name="fix_x" value="$(arg fix_x)" />
+        <param name="fix_y" value="$(arg fix_y)" />
+        <param name="fix_z" value="$(arg fix_z)" />
+        <param name="fix_yaw" value="$(arg fix_heading)" />
+        <param name="fix_pitch" value="$(arg fix_pitch)" />
+        <param name="fix_roll" value="$(arg fix_roll)" />
+    </node> -->
+
+
+    <!-- visualize obj from carma autoware api -->
+<!--     <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="track_visualization_02" output="screen" ns="/detection/object_tracker"/> -->
+
+<!-- <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="cluster_detect_visualization_01"
+          output="screen" ns="/detection/lidar_detector">
+    <param name="box_color1"  value="$(arg box_color1)"/>
+    <param name="box_color2"  value="$(arg box_color2)"/>
+    <param name="box_color3"  value="$(arg box_color3)"/>
+    <param name="box_colora"  value="$(arg box_colora)"/>
+</node> -->
+</group>
+</launch>

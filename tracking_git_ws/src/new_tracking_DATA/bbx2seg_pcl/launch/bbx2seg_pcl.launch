@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  <node name="bbx2seg_pcl_v3_node" pkg="bbx2seg_pcl" type="bbx2seg_pcl_v4" output="screen">
+    <!-- Load the parameter file -->
+    <rosparam command="load" file="$(find bbx2seg_pcl)/config/bbx2segpcl.yaml"/>
+
+  </node>
+</launch>

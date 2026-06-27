@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- rviz -->
+    <arg name="rviz" default="false" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_" args="-d $(find vehicle_launch)/rviz/rviz.rviz" />
+    </group>
+
+    <!-- kvaster -->
+    <!-- for another kvaster -->
+    <!-- <arg name="can_hardware_id" default="18706" /> -->
+    <include file="$(find kvaser_interface)/launch/kvaser_can_bridge.launch">
+        <arg name="can_hardware_id" default="18723" />
+        <arg name="can_circuit_id" default="0" />
+        <arg name="can_bit_rate" default="500000" />
+        <arg name="imu_topic" default="/veh_1/gps/imu" />
+        <arg name="can_tx_topic" default="/veh_1/can_tx"/>
+        <arg name="inspvax_topic" default="/veh_1/novatel/oem7/inspva" />
+        <arg name="can_rx_topic" default="/veh_1/can_rx"/>
+    </include>
+
+    <!-- kvaster to gps -->
+    <include file="$(find nmea_gps_driver)/launch/launch_gps_time_convert.launch">
+        <arg name="inspvax_topic" default="/veh_1/novatel/oem7/inspva" />
+        <arg name="gps_can_time_topic" default="/veh_1/gps_can_time_hz100" />
+        <arg name="gps_time_hz" default="100" />
+    </include>
+
+</launch>

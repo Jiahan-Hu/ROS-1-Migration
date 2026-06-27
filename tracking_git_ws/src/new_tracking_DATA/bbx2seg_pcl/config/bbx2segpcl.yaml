@@ -1,0 +1,6 @@
+bbx2segpcl: {
+  sub_bbx_score: "/fusion/bbx",
+  # sub_bbx_score: "/tracking/transformed_objects_fusion_box_score",
+  pub_segment_msg: "/fusion/seg/segment_msgs",
+  pub_pointcloud: "/fusion/seg2/pointcloud",
+}

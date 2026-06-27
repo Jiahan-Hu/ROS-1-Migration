@@ -1,0 +1,15 @@
+[submodule "api_tracking_lib_autoware"]
+	path = api_tracking_lib_autoware
+	url = https://github.com/zhz03/api_tracking_lib_autoware.git
+[submodule "tracking_lib_execute"]
+	path = tracking_lib_execute
+	url = https://github.com/zhz03/tracking_lib_execute.git
+[submodule "bbx2seg_pcl"]
+	path = bbx2seg_pcl
+	url = https://github.com/zhz03/bbx2seg_pcl.git
+[submodule "common_lib"]
+	path = common_lib
+	url = https://github.com/zhz03/common_lib.git
+[submodule "bbx_filter"]
+	path = bbx_filter
+	url = https://github.com/zhz03/bbx_filter.git

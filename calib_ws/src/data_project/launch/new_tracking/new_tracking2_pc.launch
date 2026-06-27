@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="sim2">
+    <!-- <arg name="point_cloud_topic" default="/detection/lidar_detector/points_cluster" /> -->
+
+    <arg name="detection_object_topic" default="/detection/lidar_detector2/objects"/>
+    <arg name="segment_cloud_topic" default="/segment2/clouds_segmented"/>
+
+    <!-- Launch tracking_node -->
+    <node name="tracking_node_pc_new_02" pkg="tracking_lib_execute" type="tracking_lib_execute_tracking_pc_node_new" output="screen">
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/new_tracking2_TRC_pc.yaml"/>
+        <rosparam command="load" file="$(find tracking_lib_execute)/config/kitti/TrackingWorker_TRC.yaml"/>
+    </node>
+
+    <!-- tracking_lib autoware api -->
+    <!--     <node pkg="api_tracking_lib_autoware" type="api_tracking_lib_autoware" name="api_tracking_lib_autoware" output="screen" /> -->
+    <node pkg="api_tracking_lib_autoware" type="api_tracking_lib_autoware_sim" name="api_tracking_lib_autoware_02" output="screen">
+
+        <param name="detection_object_topic" value="$(arg detection_object_topic)" />
+        <param name="segment_cloud_topic" value="$(arg segment_cloud_topic)" />
+
+    </node>
+
+</group>
+</launch>

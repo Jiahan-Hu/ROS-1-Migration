@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Node for transforming LiDAR points -->
+    <node name="transform_lidar_node" pkg="your_package_name" type="your_node_executable" output="screen">
+        <!-- Set the parameters for the topic names -->
+        <param name="fusion_pose_gps_topic" type="string" value="/fusion_pose_gps"/>
+        <param name="rslidar_points_topic" type="string" value="/veh2/rslidar_points"/>
+        <param name="transformed_rslidar_points_topic" type="string" value="/veh2/transformed_rslidar_points"/>
+    </node>
+</launch>

@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<launch>
+<!--     <arg name="input_topic" default="/sync/ouster_nw/points" />
+    <arg name="output_topic" default="/sync_t/ouster_nw/points" /> -->
+    <arg name="input_topic" default="/veh_1/rslidar_points" />
+    <arg name="output_topic" default="/veh_1/tchange/rslidar_points" />
+    <arg name="time_threshold" default="500000000" />
+    <node pkg="pcl_time_change" type="pcl_time_change" name="pcl_time_change" output="screen">
+        <param name="input_topic" value="$(arg input_topic)" />
+        <param name="output_topic" value="$(arg output_topic)" />
+        <param name="time_threshold" value="$(arg time_threshold)" />
+    </node>
+
+</launch>

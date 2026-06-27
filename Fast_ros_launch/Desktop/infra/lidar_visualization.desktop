@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch infra_launch launch_nw.launch --screen'
+Name=Infra LiDAR
+Comment=Infra LiDAR
+Icon=/home/zhaoliang/Documents/lincoln_car/icons/lidar.png

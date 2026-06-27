@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=bash -ci 'roslaunch vehicle_launch launch_v2_gps.launch --screen'
+Name=GPS Launch
+Comment=gps launch
+Icon=/home/dev/Documents/icons/gps_icon.svg

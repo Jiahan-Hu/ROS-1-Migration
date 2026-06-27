@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="node_name" default="zed_gps_sync_node1"/>
+  <arg name="time_ref_topic" default="/gps_nw/gps_time_30hz"/>
+  <arg name="image_topic" default="/axis214/image_raw/compressed"/>
+  <arg name="new_image_topic" default="/axis214_update/image_raw/compressed"/>
+
+  <node pkg="zed_gps_publisher" type="zed_gps_publisher.py" name="$(arg node_name)">
+    <param name="gps_time_topic" value="$(arg time_ref_topic)"/>
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="updated_image_topic" value="$(arg new_image_topic)"/>
+  </node>
+</launch>
